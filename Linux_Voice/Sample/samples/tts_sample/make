@@ -1,0 +1,3 @@
+source 64bit_make.sh
+./bin/tts_sample 你好
+play ./bin/tts_sample.wav 

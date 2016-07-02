@@ -1,0 +1,100 @@
+============================================================
+Time  2015/11/26 02:57:43 342 
+============================================================
+[2015/11/26 02:57:43 343] tts        553  SYS_MSG_REGCB param0 =  msp_status_cb  param1 =  func(bc0170a0) 
+[2015/11/26 02:57:43 344] config     42   use general cloud  
+[2015/11/26 02:57:43 347] tts_cloud  1389 SYS_MSG_REGCB_CLOUD param0 =   msp_status_cb  param1 =  func(bc0170a0) 
+[2015/11/26 02:57:43 347] tts        525  TTS_MSG_SSB  
+[2015/11/26 02:57:43 348] tts        337  params =  voice_name = xiaoyan, text_encoding = UTF8, sample_rate = 16000, speed = 50, volume = 50, pitch = 50, rdn = 2  
+[2015/11/26 02:57:43 348] tts        371  ssb|use cloud  
+[2015/11/26 02:57:43 348] tts_cloud  1360 SYS_MSG_LOAD_CLOUD  
+[2015/11/26 02:57:43 348] tts_cloud  946  TTS_MSG_SSB_CLOUD  
+[2015/11/26 02:57:43 348] tts_cloud  969  tts  ctts1P1HHBHb-AnOHopTzaatbVkWA0l2d7p  268436457  1442971605  
+[2015/11/26 02:57:43 355] tts_cloud  1015 not login!  
+[2015/11/26 02:57:43 355] tts_cloud  1138 need_decode  true  
+[2015/11/26 02:57:43 355] tts_cloud  1139 aue=  speex-wb;7   auf=  audio/L16;rate=16000  
+[2015/11/26 02:57:43 356] tts_cloud  1161 User set url is   nil  
+[2015/11/26 02:57:43 358] transport  603  paramkvsport is   nil  
+[2015/11/26 02:57:43 358] transport  611  ns_enable=  0  
+[2015/11/26 02:57:43 358] transport  655  url.full=  nil  
+[2015/11/26 02:57:43 358] transport  838  net type:  standard  
+[2015/11/26 02:57:43 359] transport  839  net operator:  def  
+[2015/11/26 02:57:43 359] transport  840  use proxy:  false  
+[2015/11/26 02:57:43 359] transport  1071 ns_enable =  0  
+[2015/11/26 02:57:43 359] tts        531  TTS_MSG_SYN  0  
+[2015/11/26 02:57:43 359] tts        411  synth|use cloud  
+[2015/11/26 02:57:43 359] tts_cloud  1181 TTS_MSG_SYN_CLOUD  
+[2015/11/26 02:57:43 359] tts_cloud  1192 remote_connected =  false  
+[2015/11/26 02:57:43 360] tts        534  TTS_MSG_GETAUDIO  0  
+[2015/11/26 02:57:43 360] tts        472  get audio|use cloud  
+[2015/11/26 02:57:43 360] tts_cloud  1276 TTS_MSG_GETAUDIO_CLOUD | synth_status  1  
+[2015/11/26 02:57:43 416] transport  155  [dns] [0] response 59.107.24.3  
+[2015/11/26 02:57:43 416] transport  163  59  107  24  3  
+[2015/11/26 02:57:43 416] transport  192  iplist not avail  
+[2015/11/26 02:57:43 417] transport  251  no iplist now  
+[2015/11/26 02:57:43 417] network    89   iptoenv ,  ipcache  dev.voicecloud.cn  def  59.107.24.3  
+[2015/11/26 02:57:43 418] transport  1138 [soc] connect   59.107.24.3  80  
+[2015/11/26 02:57:43 418] transport  1155 mspsoc.open,prot_type=  tcp  
+[2015/11/26 02:57:43 511] tts        534  TTS_MSG_GETAUDIO  0  
+[2015/11/26 02:57:43 511] tts        472  get audio|use cloud  
+[2015/11/26 02:57:43 511] tts_cloud  1276 TTS_MSG_GETAUDIO_CLOUD | synth_status  1  
+[2015/11/26 02:57:43 663] tts        534  TTS_MSG_GETAUDIO  0  
+[2015/11/26 02:57:43 663] tts        472  get audio|use cloud  
+[2015/11/26 02:57:43 663] tts_cloud  1276 TTS_MSG_GETAUDIO_CLOUD | synth_status  1  
+[2015/11/26 02:57:43 814] tts        534  TTS_MSG_GETAUDIO  0  
+[2015/11/26 02:57:43 814] tts        472  get audio|use cloud  
+[2015/11/26 02:57:43 814] tts_cloud  1276 TTS_MSG_GETAUDIO_CLOUD | synth_status  1  
+[2015/11/26 02:57:43 965] tts        534  TTS_MSG_GETAUDIO  0  
+[2015/11/26 02:57:43 965] tts        472  get audio|use cloud  
+[2015/11/26 02:57:43 965] tts_cloud  1276 TTS_MSG_GETAUDIO_CLOUD | synth_status  1  
+[2015/11/26 02:57:44 116] tts        534  TTS_MSG_GETAUDIO  0  
+[2015/11/26 02:57:44 116] tts        472  get audio|use cloud  
+[2015/11/26 02:57:44 116] tts_cloud  1276 TTS_MSG_GETAUDIO_CLOUD | synth_status  1  
+[2015/11/26 02:57:44 267] tts        534  TTS_MSG_GETAUDIO  0  
+[2015/11/26 02:57:44 267] tts        472  get audio|use cloud  
+[2015/11/26 02:57:44 267] tts_cloud  1276 TTS_MSG_GETAUDIO_CLOUD | synth_status  1  
+[2015/11/26 02:57:44 418] tts        534  TTS_MSG_GETAUDIO  0  
+[2015/11/26 02:57:44 418] tts        472  get audio|use cloud  
+[2015/11/26 02:57:44 418] tts_cloud  1276 TTS_MSG_GETAUDIO_CLOUD | synth_status  1  
+[2015/11/26 02:57:44 569] tts        534  TTS_MSG_GETAUDIO  0  
+[2015/11/26 02:57:44 569] tts        472  get audio|use cloud  
+[2015/11/26 02:57:44 569] tts_cloud  1276 TTS_MSG_GETAUDIO_CLOUD | synth_status  1  
+[2015/11/26 02:57:44 720] tts        534  TTS_MSG_GETAUDIO  0  
+[2015/11/26 02:57:44 720] tts        472  get audio|use cloud  
+[2015/11/26 02:57:44 720] tts_cloud  1276 TTS_MSG_GETAUDIO_CLOUD | synth_status  1  
+[2015/11/26 02:57:44 871] tts        534  TTS_MSG_GETAUDIO  0  
+[2015/11/26 02:57:44 871] tts        472  get audio|use cloud  
+[2015/11/26 02:57:44 871] tts_cloud  1276 TTS_MSG_GETAUDIO_CLOUD | synth_status  1  
+[2015/11/26 02:57:45 022] tts        534  TTS_MSG_GETAUDIO  0  
+[2015/11/26 02:57:45 022] tts        472  get audio|use cloud  
+[2015/11/26 02:57:45 022] tts_cloud  1276 TTS_MSG_GETAUDIO_CLOUD | synth_status  1  
+[2015/11/26 02:57:45 173] tts        534  TTS_MSG_GETAUDIO  0  
+[2015/11/26 02:57:45 173] tts        472  get audio|use cloud  
+[2015/11/26 02:57:45 173] tts_cloud  1276 TTS_MSG_GETAUDIO_CLOUD | synth_status  1  
+[2015/11/26 02:57:45 325] tts        534  TTS_MSG_GETAUDIO  0  
+[2015/11/26 02:57:45 325] tts        472  get audio|use cloud  
+[2015/11/26 02:57:45 325] tts_cloud  1276 TTS_MSG_GETAUDIO_CLOUD | synth_status  1  
+[2015/11/26 02:57:45 475] tts        534  TTS_MSG_GETAUDIO  0  
+[2015/11/26 02:57:45 475] tts        472  get audio|use cloud  
+[2015/11/26 02:57:45 475] tts_cloud  1276 TTS_MSG_GETAUDIO_CLOUD | synth_status  1  
+[2015/11/26 02:57:45 626] tts        534  TTS_MSG_GETAUDIO  0  
+[2015/11/26 02:57:45 626] tts        472  get audio|use cloud  
+[2015/11/26 02:57:45 626] tts_cloud  1276 TTS_MSG_GETAUDIO_CLOUD | synth_status  1  
+[2015/11/26 02:57:45 777] tts        534  TTS_MSG_GETAUDIO  0  
+[2015/11/26 02:57:45 777] tts        472  get audio|use cloud  
+[2015/11/26 02:57:45 777] tts_cloud  1276 TTS_MSG_GETAUDIO_CLOUD | synth_status  1  
+[2015/11/26 02:57:45 928] tts        534  TTS_MSG_GETAUDIO  0  
+[2015/11/26 02:57:45 928] tts        472  get audio|use cloud  
+[2015/11/26 02:57:45 928] tts_cloud  1276 TTS_MSG_GETAUDIO_CLOUD | synth_status  1  
+[2015/11/26 02:57:46 079] tts        534  TTS_MSG_GETAUDIO  0  
+[2015/11/26 02:57:46 079] tts        472  get audio|use cloud  
+[2015/11/26 02:57:46 079] tts_cloud  1276 TTS_MSG_GETAUDIO_CLOUD | synth_status  1  
+[2015/11/26 02:57:46 230] tts        534  TTS_MSG_GETAUDIO  0  
+[2015/11/26 02:57:46 230] tts        472  get audio|use cloud  
+[2015/11/26 02:57:46 230] tts_cloud  1276 TTS_MSG_GETAUDIO_CLOUD | synth_status  1  
+[2015/11/26 02:57:46 381] tts        534  TTS_MSG_GETAUDIO  0  
+[2015/11/26 02:57:46 381] tts        472  get audio|use cloud  
+[2015/11/26 02:57:46 381] tts_cloud  1276 TTS_MSG_GETAUDIO_CLOUD | synth_status  1  
+[2015/11/26 02:57:46 532] tts        534  TTS_MSG_GETAUDIO  0  
+[2015/11/26 02:57:46 532] tts        472  get audio|use cloud  
+[2015/11/26 02:57:46 532] tts_cloud  1276 TTS_MSG_GETAUDIO_CLOUD | synth_status  1  
