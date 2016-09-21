@@ -4,46 +4,58 @@ import java.io.OutputStream;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.net.SocketAddress;
-
-public class UdpServerSocket{
-
-        //Size of receive buffer
-        private static final int BUFSIZE=32;
-        /** 
-         * @param args
-         */
-        public static void main(String[] args) {
-                //Test for correct # of args
-                if(args.length!=1){
-                        throw new IllegalArgumentException("Parameter(s):<Port>");
-                }   
-                int servPort = Integer.parseInt(args[0]);
-                //Create a server socket to accept client connection request
-                ServerSocket servSocket =null;
-                int recvMsgSize=0;
-                byte[] receivBuf=new byte[BUFSIZE];
-                System.out.println("start listion"+servPort);   
-                try {
-                        servSocket=new ServerSocket(servPort);
-                        while(true){
-                                Socket clientSocket=servSocket.accept();
-                                SocketAddress clientAddress = clientSocket.getRemoteSocketAddress();
-                                System.out.println("Handling client at "+ clientAddress);
-                                InputStream in =clientSocket.getInputStream();
-                                OutputStream out= clientSocket.getOutputStream();
-                                while((recvMsgSize=in.read(receivBuf))!=-1){
-                                        String receivedData=new String(receivBuf.toString());
-                                        System.out.println(receivedData);
-                                        out.write(receivBuf, 0, recvMsgSize);
-                                }
-                                clientSocket.close();
-                        }
-                } catch (IOException e) {
-                        e.printStackTrace();
-                }
-
-
-        }
-
-}
+/** 
+* UDP服务类 
+*/  
+public class UdpServerSocket {  
   
+private byte[] buffer = new byte[1024];  
+private static DatagramSocket ds = null;  
+private DatagramPacket packet = null;  
+private InetSocketAddress socketAddress = null;  
+  
+/** 
+ * 测试方法 
+ */  
+public static void main(String[] args) throws Exception {  
+	String serverHost = "127.0.0.1";  
+	int serverPort = 12345;  
+	UdpServerSocket udpServerSocket = new UdpServerSocket(serverHost,  
+			serverPort);  
+	while (true) {  
+		udpServerSocket.receive();  
+		udpServerSocket.response("你好,吃了吗!");  
+	}         
+}  
+
+/** 
+ * 构造函数，绑定主机和端口 
+ */  
+public UdpServerSocket(String host, int port) throws Exception {  
+	socketAddress = new InetSocketAddress(host, port);  
+	ds = new DatagramSocket(socketAddress);  
+	System.out.println("服务端启动!");  
+}  
+
+/** 
+ * 接收数据包，该方法会造成线程阻塞 
+ */  
+public final String receive() throws IOException {  
+	packet = new DatagramPacket(buffer, buffer.length);  
+	ds.receive(packet);  
+	String info = new String(packet.getData(), 0, packet.getLength());  
+	System.out.println("接收信息：" + info);  
+	return info;  
+}  
+
+/** 
+ * 将响应包发送给请求端 
+ */  
+public final void response(String info) throws IOException {  
+	System.out.println("客户端地址 : " + packet.getAddress().getHostAddress()  
+			+ ",端口：" + packet.getPort());  
+	DatagramPacket dp = new DatagramPacket(buffer, buffer.length, packet.getAddress(), packet.getPort());  
+	dp.setData(info.getBytes());  
+	ds.send(dp);  
+}  
+}  
