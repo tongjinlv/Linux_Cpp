@@ -1,0 +1,83 @@
+import java.io.*;
+import java.net.*;
+import java.util.*;
+import net.sf.json.JSONArray;
+import net.sf.json.JSONObject;
+import net.sf.json.JSONException; 
+class UDPServer{
+	public static IpPort[] ipool=new IpPort[10];
+	public static JSONObject json = new JSONObject();
+	public static List<String> list =new ArrayList<String>();   
+    public static List<IpPort> iplist =new ArrayList<IpPort>();   
+	public static ClientInfor clientinfor=new ClientInfor();
+	public static void main(String[] args)throws IOException{
+		DatagramSocket  server = new DatagramSocket(12345);
+        byte[] recvBuf = new byte[100];
+		System.out.println("start");
+        DatagramPacket recvPacket=new DatagramPacket(recvBuf , recvBuf.length);
+        server.receive(recvPacket);
+        String recvStr = new String(recvPacket.getData() , 0 , recvPacket.getLength());
+		System.out.println(recvStr);
+		String jsonContent = "{'hello':world,'abc':'xyz'}";  
+		//try{
+		//	JSONObject rjo = new JSONObject(recvStr);
+		//}catch(JSONException a){a.printStackTrace();}
+	//	JSONArray rja = rjo.getJSONArray("login");
+	//	System.out.println("id: " + rja.getJSONObject(0).getString("id")+" key: " + rja.getJSONObject(0).getString("id"));
+	//	IpPort ipt=new IpPort();
+	//	ipt.IpAddr=InetAddress.getByName("172.25.67.65");
+	//	iplist.add(ipt);
+		IpPort iport=new IpPort(recvPacket.getAddress(),recvPacket.getPort());
+		clientinfor.add(iport);
+		Map<String, String> map1 = new HashMap<String, String>();
+		map1.put("address", iport.IpAddr.toString());
+        map1.put("port",String.valueOf(iport.Port));
+        map1.put("id", "23");
+		map1.put("key","2");
+ 		JSONArray ja1 = JSONArray.fromObject(map1);
+		json.put("clientinfor",ja1);
+ 		System.out.println(json.toString());
+		
+        String sendStr =json.toString();
+        byte[] sendBuf;
+        sendBuf = sendStr.getBytes();
+        DatagramPacket sendPacket=new DatagramPacket(sendBuf , sendBuf.length ,iport.IpAddr,iport.Port);
+        server.send(sendPacket);
+        server.close();
+    }
+}
+
+
+class IpPort{
+	     InetAddress IpAddr;//用户公网IP
+	     int Port;//用户公网端口
+		 public String ID;//网络通信唯一地址
+		 public String Key;//用户登录密钥
+	public IpPort(InetAddress IpAddr,int Port){
+		this.IpAddr=IpAddr;
+		this.Port=Port;
+	}
+}
+class ClientInfor{
+		public List<IpPort> iplist =new ArrayList<IpPort>();
+		public void add(IpPort ip){
+			iplist.add(ip);
+		}
+		public String getJson(String name){
+			String jstr="{\""+name+":[";
+			for(int i=0;i<iplist.size();i++)
+			{
+				IpPort iport=iplist.get(i);
+				jstr+="{";
+				jstr+="\"";
+				jstr+=iport.IpAddr.toString();
+				jstr+="\"";
+				jstr+=":";
+				jstr+=iport.Port;
+				jstr+="},";
+			}
+			jstr+="]}";
+			return jstr;
+		}
+
+}

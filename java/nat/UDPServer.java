@@ -2,31 +2,30 @@ import java.io.*;
 import java.net.*;
 import java.util.*;
 
-
 class UDPServer{
 	public static IpPort[] ipool=new IpPort[10];
-    public static List<String> list =new ArrayList<String>();   
+	public static List<String> list =new ArrayList<String>();   
     public static List<IpPort> iplist =new ArrayList<IpPort>();   
+	public static ClientInfor clientinfor=new ClientInfor();
 	public static void main(String[] args)throws IOException{
-        DatagramSocket  server = new DatagramSocket(12345);
+		DatagramSocket  server = new DatagramSocket(12345);
+		while(true)
+		{
         byte[] recvBuf = new byte[100];
 		System.out.println("start");
         DatagramPacket recvPacket=new DatagramPacket(recvBuf , recvBuf.length);
         server.receive(recvPacket);
+		IpPort iport=new IpPort(recvPacket.getAddress(),recvPacket.getPort());
         String recvStr = new String(recvPacket.getData() , 0 , recvPacket.getLength());
+		System.out.println("ipaddr:"+iport.IpAddr+" port:"+iport.Port);
 		System.out.println(recvStr);
-	//	IpPort ipt=new IpPort();
-	//	ipt.IpAddr=InetAddress.getByName("172.25.67.65");
-	//	iplist.add(ipt);
-		
-		ipool[0]=new IpPort(recvPacket.getAddress(),recvPacket.getPort());
-		System.out.println("ip:"+ipool[0].IpAddr+" port:"+ipool[0].Port);
-        String sendStr = "Hello ! I'm Server";
-        byte[] sendBuf;
-        sendBuf = sendStr.getBytes();
-        DatagramPacket sendPacket=new DatagramPacket(sendBuf , sendBuf.length ,ipool[0].IpAddr,ipool[0].Port);
+		byte[] sendBuf;
+        String sendStr="你好";
+		sendBuf = sendStr.getBytes();
+        DatagramPacket sendPacket=new DatagramPacket(sendBuf , sendBuf.length ,iport.IpAddr,iport.Port);
         server.send(sendPacket);
-        server.close();
+		}
+        //server.close();
     }
 }
 
@@ -41,4 +40,26 @@ class IpPort{
 		this.Port=Port;
 	}
 }
+class ClientInfor{
+		public List<IpPort> iplist =new ArrayList<IpPort>();
+		public void add(IpPort ip){
+			iplist.add(ip);
+		}
+		public String getJson(String name){
+			String jstr="{\""+name+":[";
+			for(int i=0;i<iplist.size();i++)
+			{
+				IpPort iport=iplist.get(i);
+				jstr+="{";
+				jstr+="\"";
+				jstr+=iport.IpAddr.toString();
+				jstr+="\"";
+				jstr+=":";
+				jstr+=iport.Port;
+				jstr+="},";
+			}
+			jstr+="]}";
+			return jstr;
+		}
 
+}
