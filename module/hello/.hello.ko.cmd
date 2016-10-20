@@ -1,0 +1,1 @@
+cmd_/home/tom/work/Linux_Cpp/module/hello/hello.ko := ld -r -m elf_x86_64 -T /usr/src/kernels/3.10.0-327.36.2.el7.x86_64/scripts/module-common.lds --build-id  -o /home/tom/work/Linux_Cpp/module/hello/hello.ko /home/tom/work/Linux_Cpp/module/hello/hello.o /home/tom/work/Linux_Cpp/module/hello/hello.mod.o

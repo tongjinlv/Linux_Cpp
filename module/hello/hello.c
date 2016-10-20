@@ -5,13 +5,13 @@ MODULE_LICENSE("Dual BSD/GPL");
 
 static int hello_init(void)
 {
-	printk(KERN_ALERT "Hello world\n");
+	printk(KERN_ALERT "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddHello world\n");
 	return 0;
 }
 
 static void hello_exit(void)
 {
-	printk(KERN_ALERT "Goodbye world\n");
+	printk(KERN_ALERT "ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddGoodbye world\n");
 }
 
 module_init(hello_init);
