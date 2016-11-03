@@ -1,0 +1,1225 @@
+=============================================================
+	iFlyTEK log file
+	Subject : Mobile Speech Client
+	Created-Time: 116/9/26-12:34:32 831
+	Application: ôv4{…~“
+	PID: 2892 Version: 116/9/26-12:34:32 831
+=============================================================
+[116/9/26-12:34:32 831][INF][Px0b4c][Tx76f3b210] conf_init| The local config manager instance has been initialized successfully.
+[116/9/26-12:34:32 832][VBS][Px0b4c][Tx76f3b210] read_common_conf| read coding_libs from config file failed, use default value "libspeex.so".
+[116/9/26-12:34:32 832][INF][Px0b4c][Tx76f3b210] init_sess_info| open session error log file ./0b0cfc07fca81c956ab9181d8576f4a8/msc_sess_err.log failed, err = 13
+[116/9/26-12:34:32 832][INF][Px0b4c][Tx76f3b210] init_sess_info| open session performance log file ./0b0cfc07fca81c956ab9181d8576f4a8/msc_sess_perf.log failed, err = 13
+[116/9/26-12:34:32 832][INF][Px0b4c][Tx76f3b210] init_sess_info| got total 0 error info and 0 performance info to upload.
+[116/9/26-12:34:32 842][VBS][Px0b4c][Tx76bd1450] sock thread suspend...
+[116/9/26-12:34:32 847][INF][Px0b4c][Tx76f3b210] get_ip_from_url| DNS: url input is dev.voicecloud.cn, corresponding ip is 59.107.24.11
+[116/9/26-12:34:32 848][VBS][Px0b4c][Tx76f3b210] synth_session_begin| enter.
+[116/9/26-12:34:32 848][INF][Px0b4c][Tx76f3b210] read_uid| open user data file ./usr.dat failed, err = 2
+[116/9/26-12:34:32 848][INF][Px0b4c][Tx76f3b210] read_uid| open user data file ./0b0cfc07fca81c956ab9181d8576f4a8/usr.dat failed, err = 13
+[116/9/26-12:34:32 848][VBS][Px0b4c][Tx76f3b210] build_http_message| leave ok, http request message:
+POST /index.htm HTTP/1.1
+CT:text/plain
+Content-Length:173
+
+ver=MSSP+0%2E9&sub=tts&ssm=1&auf=audio%2FL16%3Brate%3D16000&vcn=xiaoyan&tte=UTF8&cmd=ssb&dvc=00%3A00%3A00%3A00%3A00%3A00&cver=3%2E0%2E0%2E1034&key=0c4G4KJ85svIzlOcJwQOirYw==
+[116/9/26-12:34:32 848][VBS][Px0b4c][Tx76f3b210] send_recv_http_message| enter.
+[116/9/26-12:34:32 848][VBS][Px0b4c][Tx76f3b210] connect_server| enter, transport = 0x6e1b68, connect status = 0
+[116/9/26-12:34:32 849][INF][Px0b4c][Tx76f3b210] connect_server| connecting to 59.107.24.11:1028.
+[116/9/26-12:34:32 850][VBS][Px0b4c][Tx76f3b210] sock thread resume...
+[116/9/26-12:34:32 870][VBS][Px0b4c][Tx76f3b210] connect_server| leave ok.
+[116/9/26-12:34:32 870][VBS][Px0b4c][Tx76f3b210] send_message| enter.
+[116/9/26-12:34:32 871][VBS][Px0b4c][Tx76f3b210] send_message| leave ok.
+[116/9/26-12:34:32 871][VBS][Px0b4c][Tx76f3b210] send_message| enter.
+[116/9/26-12:34:32 871][VBS][Px0b4c][Tx76f3b210] send_message| leave ok.
+[116/9/26-12:34:32 871][VBS][Px0b4c][Tx76f3b210] send_http_message| http request message has been sent out successfully
+[116/9/26-12:34:32 871][VBS][Px0b4c][Tx76f3b210] recv_message| enter, offset = 0.
+[116/9/26-12:34:32 903][VBS][Px0b4c][Tx76f3b210] recv_message| leave ok, msg len = 252.
+[116/9/26-12:34:32 903][VBS][Px0b4c][Tx76f3b210] send_recv_http_message| leave, http response message:
+HTTP/1.1 200 OK
+Content-Length: 113
+X-Req-Date: 2016/10/26 20:29:49 136
+CT: text/plain
+CL: 113
+X-Res-Date: 2016/10/26 20:29:49 150
+
+ver=MSSP+0%2E9&ret=0&cver=3%2E0%2E0%2E1034&key=0dc3zYLbpM150QOnUb9QGbyzwHiyNMdUowoKMehxwEzrmcacJAk0EnHchIrYcqcYpU
+[116/9/26-12:34:32 903][INF][Px0b4c][Tx76f3b210] synth_session_begin| update net_rate as inf
+[116/9/26-12:34:32 903][VBS][Px0b4c][Tx76f3b210] build_http_message| leave ok, http request message:
+POST /index.htm HTTP/1.1
+CT:mp;b=--
+Content-Length:202
+
+----
+CL:123
+CT:text/plain
+
+ver=MSSP+0%2E9&sub=tts&cmd=syn&cver=3%2E0%2E0%2E1034&key=0dc3zYLbpM150QOnUb9QGbyzwHiyNMdUowoKMehxwEzrlQ88KmQFXgvshIrYcqcYpU
+----
+CL:2
+CT:binary/synth+text
+
+dd
+------
+[116/9/26-12:34:32 903][VBS][Px0b4c][Tx76f3b210] send_recv_http_message| enter.
+[116/9/26-12:34:32 903][VBS][Px0b4c][Tx76f3b210] connect_server| enter, transport = 0x6e1b68, connect status = 1
+[116/9/26-12:34:32 903][VBS][Px0b4c][Tx76f3b210] connect_server| leave ok, connected already.
+[116/9/26-12:34:32 903][VBS][Px0b4c][Tx76f3b210] send_message| enter.
+[116/9/26-12:34:32 903][VBS][Px0b4c][Tx76f3b210] send_message| leave ok.
+[116/9/26-12:34:32 903][VBS][Px0b4c][Tx76f3b210] send_message| enter.
+[116/9/26-12:34:32 903][VBS][Px0b4c][Tx76f3b210] send_message| leave ok.
+[116/9/26-12:34:32 903][VBS][Px0b4c][Tx76f3b210] send_http_message| http request message has been sent out successfully
+[116/9/26-12:34:32 903][VBS][Px0b4c][Tx76f3b210] recv_message| enter, offset = 0.
+[116/9/26-12:34:32 944][VBS][Px0b4c][Tx76f3b210] recv_message| leave ok, msg len = 252.
+[116/9/26-12:34:32 944][VBS][Px0b4c][Tx76f3b210] send_recv_http_message| leave, http response message:
+HTTP/1.1 200 OK
+Content-Length: 113
+X-Req-Date: 2016/10/26 20:29:49 173
+CT: text/plain
+CL: 113
+X-Res-Date: 2016/10/26 20:29:49 188
+
+ver=MSSP+0%2E9&ret=0&cver=3%2E0%2E0%2E1034&key=0dc3zYLbpM150QOnUb9QGbyzwHiyNMdUowoKMehxwEzrlQ88KmQFXgvshIrYcqcYpU
+[116/9/26-12:34:32 945][VBS][Px0b4c][Tx76f3b210] build_http_message| leave ok, http request message:
+POST /index.htm HTTP/1.1
+CT:text/plain
+Content-Length:123
+
+ver=MSSP+0%2E9&sub=tts&cmd=fch&cver=3%2E0%2E0%2E1034&key=0dc3zYLbpM150QOnUb9QGbyzwHiyNMdUowoKMehxwEzrms2DurAZqtc8hIrYcqcYpU
+[116/9/26-12:34:32 945][VBS][Px0b4c][Tx76f3b210] send_recv_http_message| enter.
+[116/9/26-12:34:32 945][VBS][Px0b4c][Tx76f3b210] connect_server| enter, transport = 0x6e1b68, connect status = 1
+[116/9/26-12:34:32 945][VBS][Px0b4c][Tx76f3b210] connect_server| leave ok, connected already.
+[116/9/26-12:34:32 945][VBS][Px0b4c][Tx76f3b210] send_message| enter.
+[116/9/26-12:34:32 945][VBS][Px0b4c][Tx76f3b210] send_message| leave ok.
+[116/9/26-12:34:32 945][VBS][Px0b4c][Tx76f3b210] send_message| enter.
+[116/9/26-12:34:32 945][VBS][Px0b4c][Tx76f3b210] send_message| leave ok.
+[116/9/26-12:34:32 945][VBS][Px0b4c][Tx76f3b210] send_http_message| http request message has been sent out successfully
+[116/9/26-12:34:32 945][VBS][Px0b4c][Tx76f3b210] recv_message| enter, offset = 0.
+[116/9/26-12:34:33 097][VBS][Px0b4c][Tx76f3b210] recv_message| leave ok, msg len = 1678.
+[116/9/26-12:34:33 097][VBS][Px0b4c][Tx76f3b210] send_recv_http_message| leave, http response message:
+HTTP/1.1 200 OK
+Content-Length: 1540
+X-Req-Date: 2016/10/26 20:29:49 281
+CT: mp;b=--
+CL: 1540
+X-Res-Date: 2016/10/26 20:29:49 301
+
+----
+CL:125
+
+ver=MSSP+0%2E9&ret=0&cver=3%2E0%2E0%2E1034&ced=2&ofg=2&key=0dc3zYLbpM150QOnUb9QGbyzwHiyNMdUowoKMehxwEzrms2DurAZqtc8hIrYcqcYpU
+----
+CL:1342
+CT:binary/audio
+CE:speex-wb
+
+<5Êí’ 
+[116/9/26-12:34:33 101][VBS][Px0b4c][Tx76f3b210] synth_audio_get| total 14080 bytes synthetic audio data got.
+[116/9/26-12:34:33 101][INF][Px0b4c][Tx76f3b210] synth_audio_get| got last audio block.
+[116/9/26-12:34:33 101][VBS][Px0b4c][Tx76f3b210] QTTSGetParam| enter, sessionID=msc-resource0001@synthesizer, paramName=upflow, valueLen=32
+[116/9/26-12:34:33 101][VBS][Px0b4c][Tx76f3b210] QTTSGetParam| leave, ret=0, value=684, len = 3
+[116/9/26-12:34:33 101][VBS][Px0b4c][Tx76f3b210] QTTSGetParam| enter, sessionID=msc-resource0001@synthesizer, paramName=downflow, valueLen=32
+[116/9/26-12:34:33 101][VBS][Px0b4c][Tx76f3b210] QTTSGetParam| leave, ret=0, value=2182, len = 4
+[116/9/26-12:34:33 102][VBS][Px0b4c][Tx76f3b210] build_http_message| leave ok, http request message:
+POST /index.htm HTTP/1.1
+CT:text/plain
+Content-Length:123
+
+ver=MSSP+0%2E9&sub=tts&cmd=sse&cver=3%2E0%2E0%2E1034&key=0dc3zYLbpM150QOnUb9QGbyzwHiyNMdUowoKMehxwEzrnGKfgFPMOlichIrYcqcYpU
+[116/9/26-12:34:33 102][VBS][Px0b4c][Tx76f3b210] connect_server| enter, transport = 0x6e1b68, connect status = 1
+[116/9/26-12:34:33 102][VBS][Px0b4c][Tx76f3b210] connect_server| leave ok, connected already.
+[116/9/26-12:34:33 102][VBS][Px0b4c][Tx76f3b210] send_message| enter.
+[116/9/26-12:34:33 102][VBS][Px0b4c][Tx76f3b210] send_message| leave ok.
+[116/9/26-12:34:33 102][VBS][Px0b4c][Tx76f3b210] send_message| enter.
+[116/9/26-12:34:33 102][VBS][Px0b4c][Tx76f3b210] send_message| leave ok.
+[116/9/26-12:34:33 102][VBS][Px0b4c][Tx76f3b210] send_http_message| http request message has been sent out successfully
+[116/9/26-12:34:33 102][VBS][Px0b4c][Tx76f3b210] disconnect_server| enter.
+[116/9/26-12:34:33 102][VBS][Px0b4c][Tx76f3b210] disconnect_server| leave ok.
+[116/9/26-12:34:33 102][INF][Px0b4c][Tx76f3b210] synth_session_end| size of data uploaded by user: 870(bytes), downloaded by user: 2182(bytes), effective data uploaded by user: 68(bytes), effective data downloaded by user: 1342(bytes).
+[116/9/26-12:34:33 102][VBS][Px0b4c][Tx76f3b210] disconnect_server| enter.
+[116/9/26-12:34:33 102][VBS][Px0b4c][Tx76f3b210] disconnect_server| leave ok.
+[116/9/26-12:34:33 102][VBS][Px0b4c][Tx76f3b210] QTTSSessionEnd| reason: Normal.
+[116/9/26-12:34:33 102][INF][Px0b4c][Tx76f3b210] fini_sess_info| open session error log file ./0b0cfc07fca81c956ab9181d8576f4a8/msc_sess_err.log failed, err = 13
+[116/9/26-12:34:33 102][INF][Px0b4c][Tx76f3b210] fini_sess_info| open session performance log file ./0b0cfc07fca81c956ab9181d8576f4a8/msc_sess_perf.log failed, err = 13
+=============================================================
+	Mobile Speech Client End-Time: 116/9/26-12:34:33 102
+=============================================================
+=============================================================
+	iFlyTEK log file
+	Subject : Mobile Speech Client
+	Created-Time: 116/9/26-12:35:32 470
+	Application: [óv$Ž~¡
+	PID: 2900 Version: 116/9/26-12:35:32 470
+=============================================================
+[116/9/26-12:35:32 470][INF][Px0b54][Tx76f2f210] conf_init| The local config manager instance has been initialized successfully.
+[116/9/26-12:35:32 471][VBS][Px0b54][Tx76f2f210] read_common_conf| read coding_libs from config file failed, use default value "libspeex.so".
+[116/9/26-12:35:32 471][INF][Px0b54][Tx76f2f210] init_sess_info| open session error log file ./0b0cfc07fca81c956ab9181d8576f4a8/msc_sess_err.log failed, err = 13
+[116/9/26-12:35:32 472][INF][Px0b54][Tx76f2f210] init_sess_info| open session performance log file ./0b0cfc07fca81c956ab9181d8576f4a8/msc_sess_perf.log failed, err = 13
+[116/9/26-12:35:32 472][INF][Px0b54][Tx76f2f210] init_sess_info| got total 0 error info and 0 performance info to upload.
+[116/9/26-12:35:32 481][VBS][Px0b54][Tx76bc5450] sock thread suspend...
+[116/9/26-12:35:32 503][INF][Px0b54][Tx76f2f210] get_ip_from_url| DNS: url input is dev.voicecloud.cn, corresponding ip is 59.107.24.11
+[116/9/26-12:35:32 504][VBS][Px0b54][Tx76f2f210] synth_session_begin| enter.
+[116/9/26-12:35:32 504][INF][Px0b54][Tx76f2f210] read_uid| open user data file ./usr.dat failed, err = 2
+[116/9/26-12:35:32 505][INF][Px0b54][Tx76f2f210] read_uid| open user data file ./0b0cfc07fca81c956ab9181d8576f4a8/usr.dat failed, err = 13
+[116/9/26-12:35:32 505][VBS][Px0b54][Tx76f2f210] build_http_message| leave ok, http request message:
+POST /index.htm HTTP/1.1
+CT:text/plain
+Content-Length:173
+
+ver=MSSP+0%2E9&sub=tts&ssm=1&auf=audio%2FL16%3Brate%3D16000&vcn=xiaoyan&tte=UTF8&cmd=ssb&dvc=00%3A00%3A00%3A00%3A00%3A00&cver=3%2E0%2E0%2E1034&key=0c4G4KJ85svIzlOcJwQOirYw==
+[116/9/26-12:35:32 505][VBS][Px0b54][Tx76f2f210] send_recv_http_message| enter.
+[116/9/26-12:35:32 505][VBS][Px0b54][Tx76f2f210] connect_server| enter, transport = 0xae7b78, connect status = 0
+[116/9/26-12:35:32 506][INF][Px0b54][Tx76f2f210] connect_server| connecting to 59.107.24.11:1028.
+[116/9/26-12:35:32 507][VBS][Px0b54][Tx76f2f210] sock thread resume...
+[116/9/26-12:35:32 819][VBS][Px0b54][Tx76f2f210] connect_server| leave ok.
+[116/9/26-12:35:32 819][VBS][Px0b54][Tx76f2f210] send_message| enter.
+[116/9/26-12:35:32 819][VBS][Px0b54][Tx76f2f210] send_message| leave ok.
+[116/9/26-12:35:32 819][VBS][Px0b54][Tx76f2f210] send_message| enter.
+[116/9/26-12:35:32 819][VBS][Px0b54][Tx76f2f210] send_message| leave ok.
+[116/9/26-12:35:32 819][VBS][Px0b54][Tx76f2f210] send_http_message| http request message has been sent out successfully
+[116/9/26-12:35:32 819][VBS][Px0b54][Tx76f2f210] recv_message| enter, offset = 0.
+[116/9/26-12:35:33 021][WAN][Px0b54][Tx76f2f210] recv_message| leave, receive message from server timeout!
+[116/9/26-12:35:33 021][VBS][Px0b54][Tx76f2f210] recv_message| enter, offset = 0.
+[116/9/26-12:35:33 222][WAN][Px0b54][Tx76f2f210] recv_message| leave, receive message from server timeout!
+[116/9/26-12:35:33 222][VBS][Px0b54][Tx76f2f210] recv_message| enter, offset = 0.
+[116/9/26-12:35:33 424][WAN][Px0b54][Tx76f2f210] recv_message| leave, receive message from server timeout!
+[116/9/26-12:35:33 424][VBS][Px0b54][Tx76f2f210] recv_message| enter, offset = 0.
+[116/9/26-12:35:33 625][WAN][Px0b54][Tx76f2f210] recv_message| leave, receive message from server timeout!
+[116/9/26-12:35:33 626][VBS][Px0b54][Tx76f2f210] recv_message| enter, offset = 0.
+[116/9/26-12:35:33 827][WAN][Px0b54][Tx76f2f210] recv_message| leave, receive message from server timeout!
+[116/9/26-12:35:33 827][VBS][Px0b54][Tx76f2f210] recv_message| enter, offset = 0.
+[116/9/26-12:35:33 838][VBS][Px0b54][Tx76f2f210] recv_message| leave ok, msg len = 250.
+[116/9/26-12:35:33 838][VBS][Px0b54][Tx76f2f210] send_recv_http_message| leave, http response message:
+HTTP/1.1 200 OK
+Content-Length: 113
+X-Req-Date: 2016/10/26 20:30:50 54
+CT: text/plain
+CL: 113
+X-Res-Date: 2016/10/26 20:30:50 72
+
+ver=MSSP+0%2E9&ret=0&cver=3%2E0%2E0%2E1034&key=0deMO3xWFYx1tML6GmEkLFky2DhSZpqGtEBhuTsBwOKZCcacJAk0EnHchIrYcqcYpU
+[116/9/26-12:35:33 838][INF][Px0b54][Tx76f2f210] synth_session_begin| update net_rate as inf
+[116/9/26-12:35:33 838][VBS][Px0b54][Tx76f2f210] build_http_message| leave ok, http request message:
+POST /index.htm HTTP/1.1
+CT:mp;b=--
+Content-Length:222
+
+----
+CL:123
+CT:text/plain
+
+ver=MSSP+0%2E9&sub=tts&cmd=syn&cver=3%2E0%2E0%2E1034&key=0deMO3xWFYx1tML6GmEkLFky2DhSZpqGtEBhuTsBwOKZBQ88KmQFXgvshIrYcqcYpU
+----
+CL:21
+CT:binary/synth+text
+
+hellworldiamtongjinlv
+------
+[116/9/26-12:35:33 838][VBS][Px0b54][Tx76f2f210] send_recv_http_message| enter.
+[116/9/26-12:35:33 839][VBS][Px0b54][Tx76f2f210] connect_server| enter, transport = 0xae7b78, connect status = 1
+[116/9/26-12:35:33 839][VBS][Px0b54][Tx76f2f210] connect_server| leave ok, connected already.
+[116/9/26-12:35:33 839][VBS][Px0b54][Tx76f2f210] send_message| enter.
+[116/9/26-12:35:33 839][VBS][Px0b54][Tx76f2f210] send_message| leave ok.
+[116/9/26-12:35:33 839][VBS][Px0b54][Tx76f2f210] send_message| enter.
+[116/9/26-12:35:33 839][VBS][Px0b54][Tx76f2f210] send_message| leave ok.
+[116/9/26-12:35:33 839][VBS][Px0b54][Tx76f2f210] send_http_message| http request message has been sent out successfully
+[116/9/26-12:35:33 839][VBS][Px0b54][Tx76f2f210] recv_message| enter, offset = 0.
+[116/9/26-12:35:34 040][WAN][Px0b54][Tx76f2f210] recv_message| leave, receive message from server timeout!
+[116/9/26-12:35:34 040][VBS][Px0b54][Tx76f2f210] recv_message| enter, offset = 0.
+[116/9/26-12:35:34 212][VBS][Px0b54][Tx76f2f210] recv_message| leave ok, msg len = 252.
+[116/9/26-12:35:34 212][VBS][Px0b54][Tx76f2f210] send_recv_http_message| leave, http response message:
+HTTP/1.1 200 OK
+Content-Length: 113
+X-Req-Date: 2016/10/26 20:30:50 424
+CT: text/plain
+CL: 113
+X-Res-Date: 2016/10/26 20:30:50 456
+
+ver=MSSP+0%2E9&ret=0&cver=3%2E0%2E0%2E1034&key=0deMO3xWFYx1tML6GmEkLFky2DhSZpqGtEBhuTsBwOKZBQ88KmQFXgvshIrYcqcYpU
+[116/9/26-12:35:34 212][VBS][Px0b54][Tx76f2f210] build_http_message| leave ok, http request message:
+POST /index.htm HTTP/1.1
+CT:text/plain
+Content-Length:123
+
+ver=MSSP+0%2E9&sub=tts&cmd=fch&cver=3%2E0%2E0%2E1034&key=0deMO3xWFYx1tML6GmEkLFky2DhSZpqGtEBhuTsBwOKZCs2DurAZqtc8hIrYcqcYpU
+[116/9/26-12:35:34 212][VBS][Px0b54][Tx76f2f210] send_recv_http_message| enter.
+[116/9/26-12:35:34 212][VBS][Px0b54][Tx76f2f210] connect_server| enter, transport = 0xae7b78, connect status = 1
+[116/9/26-12:35:34 212][VBS][Px0b54][Tx76f2f210] connect_server| leave ok, connected already.
+[116/9/26-12:35:34 213][VBS][Px0b54][Tx76f2f210] send_message| enter.
+[116/9/26-12:35:34 213][VBS][Px0b54][Tx76f2f210] send_message| leave ok.
+[116/9/26-12:35:34 213][VBS][Px0b54][Tx76f2f210] send_message| enter.
+[116/9/26-12:35:34 213][VBS][Px0b54][Tx76f2f210] send_message| leave ok.
+[116/9/26-12:35:34 213][VBS][Px0b54][Tx76f2f210] send_http_message| http request message has been sent out successfully
+[116/9/26-12:35:34 213][VBS][Px0b54][Tx76f2f210] recv_message| enter, offset = 0.
+[116/9/26-12:35:34 414][WAN][Px0b54][Tx76f2f210] recv_message| leave, receive message from server timeout!
+[116/9/26-12:35:34 414][VBS][Px0b54][Tx76f2f210] recv_message| enter, offset = 0.
+[116/9/26-12:35:34 616][WAN][Px0b54][Tx76f2f210] recv_message| leave, receive message from server timeout!
+[116/9/26-12:35:34 616][VBS][Px0b54][Tx76f2f210] recv_message| enter, offset = 1.
+[116/9/26-12:35:34 626][VBS][Px0b54][Tx76f2f210] recv_message| leave ok, msg len = 3508.
+[116/9/26-12:35:34 627][VBS][Px0b54][Tx76f2f210] send_recv_http_message| leave, http response message:
+HTTP/1.1 200 OK
+Content-Length: 3371
+X-Req-Date: 2016/10/26 20:30:50 599
+CT: mp;b=--
+CL: 3371
+X-Res-Date: 2016/10/26 20:30:50 860
+
+----
+CL:126
+
+ver=MSSP+0%2E9&ret=0&cver=3%2E0%2E0%2E1034&ced=21&ofg=2&key=0deMO3xWFYx1tML6GmEkLFky2DhSZpqGtEBhuTsBwOKZCs2DurAZqtc8hIrYcqcYpU
+----
+CL:3172
+CT:binary/audio
+CE:speex-wb
+
+<6˜›Ím
+[116/9/26-12:35:34 636][VBS][Px0b54][Tx76f2f210] synth_audio_get| total 33280 bytes synthetic audio data got.
+[116/9/26-12:35:34 636][INF][Px0b54][Tx76f2f210] synth_audio_get| got last audio block.
+[116/9/26-12:35:34 637][VBS][Px0b54][Tx76f2f210] QTTSGetParam| enter, sessionID=msc-resource0001@synthesizer, paramName=upflow, valueLen=32
+[116/9/26-12:35:34 637][VBS][Px0b54][Tx76f2f210] QTTSGetParam| leave, ret=0, value=704, len = 3
+[116/9/26-12:35:34 637][VBS][Px0b54][Tx76f2f210] QTTSGetParam| enter, sessionID=msc-resource0001@synthesizer, paramName=downflow, valueLen=32
+[116/9/26-12:35:34 637][VBS][Px0b54][Tx76f2f210] QTTSGetParam| leave, ret=0, value=4011, len = 4
+[116/9/26-12:35:34 637][VBS][Px0b54][Tx76f2f210] build_http_message| leave ok, http request message:
+POST /index.htm HTTP/1.1
+CT:text/plain
+Content-Length:123
+
+ver=MSSP+0%2E9&sub=tts&cmd=sse&cver=3%2E0%2E0%2E1034&key=0deMO3xWFYx1tML6GmEkLFky2DhSZpqGtEBhuTsBwOKZDGKfgFPMOlichIrYcqcYpU
+[116/9/26-12:35:34 637][VBS][Px0b54][Tx76f2f210] connect_server| enter, transport = 0xae7b78, connect status = 1
+[116/9/26-12:35:34 637][VBS][Px0b54][Tx76f2f210] connect_server| leave ok, connected already.
+[116/9/26-12:35:34 637][VBS][Px0b54][Tx76f2f210] send_message| enter.
+[116/9/26-12:35:34 637][VBS][Px0b54][Tx76f2f210] send_message| leave ok.
+[116/9/26-12:35:34 637][VBS][Px0b54][Tx76f2f210] send_message| enter.
+[116/9/26-12:35:34 638][VBS][Px0b54][Tx76f2f210] send_message| leave ok.
+[116/9/26-12:35:34 638][VBS][Px0b54][Tx76f2f210] send_http_message| http request message has been sent out successfully
+[116/9/26-12:35:34 638][VBS][Px0b54][Tx76f2f210] disconnect_server| enter.
+[116/9/26-12:35:34 638][VBS][Px0b54][Tx76f2f210] disconnect_server| leave ok.
+[116/9/26-12:35:34 638][INF][Px0b54][Tx76f2f210] synth_session_end| size of data uploaded by user: 890(bytes), downloaded by user: 4011(bytes), effective data uploaded by user: 87(bytes), effective data downloaded by user: 3172(bytes).
+[116/9/26-12:35:34 638][VBS][Px0b54][Tx76f2f210] disconnect_server| enter.
+[116/9/26-12:35:34 638][VBS][Px0b54][Tx76f2f210] disconnect_server| leave ok.
+[116/9/26-12:35:34 638][VBS][Px0b54][Tx76f2f210] QTTSSessionEnd| reason: Normal.
+[116/9/26-12:35:34 638][INF][Px0b54][Tx76f2f210] fini_sess_info| open session error log file ./0b0cfc07fca81c956ab9181d8576f4a8/msc_sess_err.log failed, err = 13
+[116/9/26-12:35:34 638][INF][Px0b54][Tx76f2f210] fini_sess_info| open session performance log file ./0b0cfc07fca81c956ab9181d8576f4a8/msc_sess_perf.log failed, err = 13
+=============================================================
+	Mobile Speech Client End-Time: 116/9/26-12:35:34 638
+=============================================================
+=============================================================
+	iFlyTEK log file
+	Subject : Mobile Speech Client
+	Created-Time: 116/9/26-12:35:41 967
+	Application: Ëþv$kÅ~¡
+	PID: 2903 Version: 116/9/26-12:35:41 967
+=============================================================
+[116/9/26-12:35:41 967][INF][Px0b57][Tx76fe6210] conf_init| The local config manager instance has been initialized successfully.
+[116/9/26-12:35:41 967][VBS][Px0b57][Tx76fe6210] read_common_conf| read coding_libs from config file failed, use default value "libspeex.so".
+[116/9/26-12:35:41 968][INF][Px0b57][Tx76fe6210] init_sess_info| open session error log file ./0b0cfc07fca81c956ab9181d8576f4a8/msc_sess_err.log failed, err = 13
+[116/9/26-12:35:41 968][INF][Px0b57][Tx76fe6210] init_sess_info| open session performance log file ./0b0cfc07fca81c956ab9181d8576f4a8/msc_sess_perf.log failed, err = 13
+[116/9/26-12:35:41 968][INF][Px0b57][Tx76fe6210] init_sess_info| got total 0 error info and 0 performance info to upload.
+[116/9/26-12:35:41 977][VBS][Px0b57][Tx76c7c450] sock thread suspend...
+[116/9/26-12:35:41 984][INF][Px0b57][Tx76fe6210] get_ip_from_url| DNS: url input is dev.voicecloud.cn, corresponding ip is 59.107.24.11
+[116/9/26-12:35:41 985][VBS][Px0b57][Tx76fe6210] synth_session_begin| enter.
+[116/9/26-12:35:41 985][INF][Px0b57][Tx76fe6210] read_uid| open user data file ./usr.dat failed, err = 2
+[116/9/26-12:35:41 986][INF][Px0b57][Tx76fe6210] read_uid| open user data file ./0b0cfc07fca81c956ab9181d8576f4a8/usr.dat failed, err = 13
+[116/9/26-12:35:41 986][VBS][Px0b57][Tx76fe6210] build_http_message| leave ok, http request message:
+POST /index.htm HTTP/1.1
+CT:text/plain
+Content-Length:173
+
+ver=MSSP+0%2E9&sub=tts&ssm=1&auf=audio%2FL16%3Brate%3D16000&vcn=xiaoyan&tte=UTF8&cmd=ssb&dvc=00%3A00%3A00%3A00%3A00%3A00&cver=3%2E0%2E0%2E1034&key=0c4G4KJ85svIzlOcJwQOirYw==
+[116/9/26-12:35:41 986][VBS][Px0b57][Tx76fe6210] send_recv_http_message| enter.
+[116/9/26-12:35:41 986][VBS][Px0b57][Tx76fe6210] connect_server| enter, transport = 0x1b47b78, connect status = 0
+[116/9/26-12:35:41 987][INF][Px0b57][Tx76fe6210] connect_server| connecting to 59.107.24.11:1028.
+[116/9/26-12:35:41 987][VBS][Px0b57][Tx76fe6210] sock thread resume...
+[116/9/26-12:35:42 361][VBS][Px0b57][Tx76fe6210] connect_server| leave ok.
+[116/9/26-12:35:42 361][VBS][Px0b57][Tx76fe6210] send_message| enter.
+[116/9/26-12:35:42 361][VBS][Px0b57][Tx76fe6210] send_message| leave ok.
+[116/9/26-12:35:42 361][VBS][Px0b57][Tx76fe6210] send_message| enter.
+[116/9/26-12:35:42 361][VBS][Px0b57][Tx76fe6210] send_message| leave ok.
+[116/9/26-12:35:42 361][VBS][Px0b57][Tx76fe6210] send_http_message| http request message has been sent out successfully
+[116/9/26-12:35:42 361][VBS][Px0b57][Tx76fe6210] recv_message| enter, offset = 0.
+[116/9/26-12:35:42 563][WAN][Px0b57][Tx76fe6210] recv_message| leave, receive message from server timeout!
+[116/9/26-12:35:42 563][VBS][Px0b57][Tx76fe6210] recv_message| enter, offset = 0.
+[116/9/26-12:35:42 765][WAN][Px0b57][Tx76fe6210] recv_message| leave, receive message from server timeout!
+[116/9/26-12:35:42 765][VBS][Px0b57][Tx76fe6210] recv_message| enter, offset = 0.
+[116/9/26-12:35:42 967][WAN][Px0b57][Tx76fe6210] recv_message| leave, receive message from server timeout!
+[116/9/26-12:35:42 967][VBS][Px0b57][Tx76fe6210] recv_message| enter, offset = 0.
+[116/9/26-12:35:43 169][WAN][Px0b57][Tx76fe6210] recv_message| leave, receive message from server timeout!
+[116/9/26-12:35:43 169][VBS][Px0b57][Tx76fe6210] recv_message| enter, offset = 0.
+[116/9/26-12:35:43 371][WAN][Px0b57][Tx76fe6210] recv_message| leave, receive message from server timeout!
+[116/9/26-12:35:43 371][VBS][Px0b57][Tx76fe6210] recv_message| enter, offset = 0.
+[116/9/26-12:35:43 573][WAN][Px0b57][Tx76fe6210] recv_message| leave, receive message from server timeout!
+[116/9/26-12:35:43 573][VBS][Px0b57][Tx76fe6210] recv_message| enter, offset = 0.
+[116/9/26-12:35:43 774][WAN][Px0b57][Tx76fe6210] recv_message| leave, receive message from server timeout!
+[116/9/26-12:35:43 774][VBS][Px0b57][Tx76fe6210] recv_message| enter, offset = 0.
+[116/9/26-12:35:43 976][WAN][Px0b57][Tx76fe6210] recv_message| leave, receive message from server timeout!
+[116/9/26-12:35:43 976][VBS][Px0b57][Tx76fe6210] recv_message| enter, offset = 0.
+[116/9/26-12:35:44 178][WAN][Px0b57][Tx76fe6210] recv_message| leave, receive message from server timeout!
+[116/9/26-12:35:44 178][VBS][Px0b57][Tx76fe6210] recv_message| enter, offset = 0.
+[116/9/26-12:35:44 380][WAN][Px0b57][Tx76fe6210] recv_message| leave, receive message from server timeout!
+[116/9/26-12:35:44 380][VBS][Px0b57][Tx76fe6210] recv_message| enter, offset = 0.
+[116/9/26-12:35:44 582][WAN][Px0b57][Tx76fe6210] recv_message| leave, receive message from server timeout!
+[116/9/26-12:35:44 582][VBS][Px0b57][Tx76fe6210] recv_message| enter, offset = 0.
+[116/9/26-12:35:44 674][VBS][Px0b57][Tx76fe6210] recv_message| leave ok, msg len = 252.
+[116/9/26-12:35:44 674][VBS][Px0b57][Tx76fe6210] send_recv_http_message| leave, http response message:
+HTTP/1.1 200 OK
+Content-Length: 113
+X-Req-Date: 2016/10/26 20:31:00 902
+CT: text/plain
+CL: 113
+X-Res-Date: 2016/10/26 20:31:00 919
+
+ver=MSSP+0%2E9&ret=0&cver=3%2E0%2E0%2E1034&key=0dhK7B^YXiJJ9pyLZxXJmnBkQQr16G03sxd9vl8Hz1tj^cacJAk0EnHchIrYcqcYpU
+[116/9/26-12:35:44 674][INF][Px0b57][Tx76fe6210] synth_session_begin| update net_rate as inf
+[116/9/26-12:35:44 675][VBS][Px0b57][Tx76fe6210] build_http_message| leave ok, http request message:
+POST /index.htm HTTP/1.1
+CT:mp;b=--
+Content-Length:222
+
+----
+CL:123
+CT:text/plain
+
+ver=MSSP+0%2E9&sub=tts&cmd=syn&cver=3%2E0%2E0%2E1034&key=0dhK7B^YXiJJ9pyLZxXJmnBkQQr16G03sxd9vl8Hz1tj9Q88KmQFXgvshIrYcqcYpU
+----
+CL:21
+CT:binary/synth+text
+
+hellworldiamtongjinlv
+------
+[116/9/26-12:35:44 675][VBS][Px0b57][Tx76fe6210] send_recv_http_message| enter.
+[116/9/26-12:35:44 675][VBS][Px0b57][Tx76fe6210] connect_server| enter, transport = 0x1b47b78, connect status = 1
+[116/9/26-12:35:44 675][VBS][Px0b57][Tx76fe6210] connect_server| leave ok, connected already.
+[116/9/26-12:35:44 675][VBS][Px0b57][Tx76fe6210] send_message| enter.
+[116/9/26-12:35:44 675][VBS][Px0b57][Tx76fe6210] send_message| leave ok.
+[116/9/26-12:35:44 675][VBS][Px0b57][Tx76fe6210] send_message| enter.
+[116/9/26-12:35:44 675][VBS][Px0b57][Tx76fe6210] send_message| leave ok.
+[116/9/26-12:35:44 675][VBS][Px0b57][Tx76fe6210] send_http_message| http request message has been sent out successfully
+[116/9/26-12:35:44 675][VBS][Px0b57][Tx76fe6210] recv_message| enter, offset = 0.
+[116/9/26-12:35:44 877][WAN][Px0b57][Tx76fe6210] recv_message| leave, receive message from server timeout!
+[116/9/26-12:35:44 877][VBS][Px0b57][Tx76fe6210] recv_message| enter, offset = 0.
+[116/9/26-12:35:45 079][WAN][Px0b57][Tx76fe6210] recv_message| leave, receive message from server timeout!
+[116/9/26-12:35:45 079][VBS][Px0b57][Tx76fe6210] recv_message| enter, offset = 0.
+[116/9/26-12:35:45 281][WAN][Px0b57][Tx76fe6210] recv_message| leave, receive message from server timeout!
+[116/9/26-12:35:45 281][VBS][Px0b57][Tx76fe6210] recv_message| enter, offset = 0.
+[116/9/26-12:35:45 393][VBS][Px0b57][Tx76fe6210] recv_message| leave ok, msg len = 252.
+[116/9/26-12:35:45 393][VBS][Px0b57][Tx76fe6210] send_recv_http_message| leave, http response message:
+HTTP/1.1 200 OK
+Content-Length: 113
+X-Req-Date: 2016/10/26 20:31:01 580
+CT: text/plain
+CL: 113
+X-Res-Date: 2016/10/26 20:31:01 641
+
+ver=MSSP+0%2E9&ret=0&cver=3%2E0%2E0%2E1034&key=0dhK7B^YXiJJ9pyLZxXJmnBkQQr16G03sxd9vl8Hz1tj9Q88KmQFXgvshIrYcqcYpU
+[116/9/26-12:35:45 394][VBS][Px0b57][Tx76fe6210] build_http_message| leave ok, http request message:
+POST /index.htm HTTP/1.1
+CT:text/plain
+Content-Length:123
+
+ver=MSSP+0%2E9&sub=tts&cmd=fch&cver=3%2E0%2E0%2E1034&key=0dhK7B^YXiJJ9pyLZxXJmnBkQQr16G03sxd9vl8Hz1tj^s2DurAZqtc8hIrYcqcYpU
+[116/9/26-12:35:45 394][VBS][Px0b57][Tx76fe6210] send_recv_http_message| enter.
+[116/9/26-12:35:45 394][VBS][Px0b57][Tx76fe6210] connect_server| enter, transport = 0x1b47b78, connect status = 1
+[116/9/26-12:35:45 394][VBS][Px0b57][Tx76fe6210] connect_server| leave ok, connected already.
+[116/9/26-12:35:45 394][VBS][Px0b57][Tx76fe6210] send_message| enter.
+[116/9/26-12:35:45 394][VBS][Px0b57][Tx76fe6210] send_message| leave ok.
+[116/9/26-12:35:45 394][VBS][Px0b57][Tx76fe6210] send_message| enter.
+[116/9/26-12:35:45 394][VBS][Px0b57][Tx76fe6210] send_message| leave ok.
+[116/9/26-12:35:45 394][VBS][Px0b57][Tx76fe6210] send_http_message| http request message has been sent out successfully
+[116/9/26-12:35:45 394][VBS][Px0b57][Tx76fe6210] recv_message| enter, offset = 0.
+[116/9/26-12:35:45 596][WAN][Px0b57][Tx76fe6210] recv_message| leave, receive message from server timeout!
+[116/9/26-12:35:45 596][VBS][Px0b57][Tx76fe6210] recv_message| enter, offset = 0.
+[116/9/26-12:35:45 688][VBS][Px0b57][Tx76fe6210] recv_message| leave ok, msg len = 3509.
+[116/9/26-12:35:45 688][VBS][Px0b57][Tx76fe6210] send_recv_http_message| leave, http response message:
+HTTP/1.1 200 OK
+Content-Length: 3371
+X-Req-Date: 2016/10/26 20:31:01 840
+CT: mp;b=--
+CL: 3371
+X-Res-Date: 2016/10/26 20:31:01 902
+
+----
+CL:126
+
+ver=MSSP+0%2E9&ret=0&cver=3%2E0%2E0%2E1034&ced=21&ofg=2&key=0dhK7B^YXiJJ9pyLZxXJmnBkQQr16G03sxd9vl8Hz1tj^s2DurAZqtc8hIrYcqcYpU
+----
+CL:3172
+CT:binary/audio
+CE:speex-wb
+
+<6˜›Ím
+[116/9/26-12:35:45 707][VBS][Px0b57][Tx76fe6210] synth_audio_get| total 33280 bytes synthetic audio data got.
+[116/9/26-12:35:45 707][INF][Px0b57][Tx76fe6210] synth_audio_get| got last audio block.
+[116/9/26-12:35:45 708][VBS][Px0b57][Tx76fe6210] QTTSGetParam| enter, sessionID=msc-resource0001@synthesizer, paramName=upflow, valueLen=32
+[116/9/26-12:35:45 708][VBS][Px0b57][Tx76fe6210] QTTSGetParam| leave, ret=0, value=704, len = 3
+[116/9/26-12:35:45 708][VBS][Px0b57][Tx76fe6210] QTTSGetParam| enter, sessionID=msc-resource0001@synthesizer, paramName=downflow, valueLen=32
+[116/9/26-12:35:45 708][VBS][Px0b57][Tx76fe6210] QTTSGetParam| leave, ret=0, value=4013, len = 4
+[116/9/26-12:35:45 709][VBS][Px0b57][Tx76fe6210] build_http_message| leave ok, http request message:
+POST /index.htm HTTP/1.1
+CT:text/plain
+Content-Length:123
+
+ver=MSSP+0%2E9&sub=tts&cmd=sse&cver=3%2E0%2E0%2E1034&key=0dhK7B^YXiJJ9pyLZxXJmnBkQQr16G03sxd9vl8Hz1tj/GKfgFPMOlichIrYcqcYpU
+[116/9/26-12:35:45 709][VBS][Px0b57][Tx76fe6210] connect_server| enter, transport = 0x1b47b78, connect status = 1
+[116/9/26-12:35:45 709][VBS][Px0b57][Tx76fe6210] connect_server| leave ok, connected already.
+[116/9/26-12:35:45 709][VBS][Px0b57][Tx76fe6210] send_message| enter.
+[116/9/26-12:35:45 709][VBS][Px0b57][Tx76fe6210] send_message| leave ok.
+[116/9/26-12:35:45 709][VBS][Px0b57][Tx76fe6210] send_message| enter.
+[116/9/26-12:35:45 709][VBS][Px0b57][Tx76fe6210] send_message| leave ok.
+[116/9/26-12:35:45 709][VBS][Px0b57][Tx76fe6210] send_http_message| http request message has been sent out successfully
+[116/9/26-12:35:45 709][VBS][Px0b57][Tx76fe6210] disconnect_server| enter.
+[116/9/26-12:35:45 709][VBS][Px0b57][Tx76fe6210] disconnect_server| leave ok.
+[116/9/26-12:35:45 709][INF][Px0b57][Tx76fe6210] synth_session_end| size of data uploaded by user: 890(bytes), downloaded by user: 4013(bytes), effective data uploaded by user: 87(bytes), effective data downloaded by user: 3172(bytes).
+[116/9/26-12:35:45 710][VBS][Px0b57][Tx76fe6210] disconnect_server| enter.
+[116/9/26-12:35:45 710][VBS][Px0b57][Tx76fe6210] disconnect_server| leave ok.
+[116/9/26-12:35:45 710][VBS][Px0b57][Tx76fe6210] QTTSSessionEnd| reason: Normal.
+[116/9/26-12:35:45 710][INF][Px0b57][Tx76fe6210] fini_sess_info| open session error log file ./0b0cfc07fca81c956ab9181d8576f4a8/msc_sess_err.log failed, err = 13
+[116/9/26-12:35:45 710][INF][Px0b57][Tx76fe6210] fini_sess_info| open session performance log file ./0b0cfc07fca81c956ab9181d8576f4a8/msc_sess_perf.log failed, err = 13
+=============================================================
+	Mobile Speech Client End-Time: 116/9/26-12:35:45 710
+=============================================================
+=============================================================
+	iFlyTEK log file
+	Subject : Mobile Speech Client
+	Created-Time: 116/9/26-12:43:53 400
+	Application: ëóv;²~¡
+	PID: 2980 Version: 116/9/26-12:43:53 400
+=============================================================
+[116/9/26-12:43:53 400][INF][Px0ba4][Tx76f38210] conf_init| The local config manager instance has been initialized successfully.
+[116/9/26-12:43:53 400][VBS][Px0ba4][Tx76f38210] read_common_conf| read coding_libs from config file failed, use default value "libspeex.so".
+[116/9/26-12:43:53 401][INF][Px0ba4][Tx76f38210] init_sess_info| open session error log file ./0b0cfc07fca81c956ab9181d8576f4a8/msc_sess_err.log failed, err = 13
+[116/9/26-12:43:53 401][INF][Px0ba4][Tx76f38210] init_sess_info| open session performance log file ./0b0cfc07fca81c956ab9181d8576f4a8/msc_sess_perf.log failed, err = 13
+[116/9/26-12:43:53 401][INF][Px0ba4][Tx76f38210] init_sess_info| got total 0 error info and 0 performance info to upload.
+[116/9/26-12:43:53 410][VBS][Px0ba4][Tx76bce450] sock thread suspend...
+[116/9/26-12:43:53 414][INF][Px0ba4][Tx76f38210] get_ip_from_url| DNS: url input is dev.voicecloud.cn, corresponding ip is 59.107.24.13
+[116/9/26-12:43:53 415][VBS][Px0ba4][Tx76f38210] synth_session_begin| enter.
+[116/9/26-12:43:53 415][INF][Px0ba4][Tx76f38210] read_uid| open user data file ./usr.dat failed, err = 2
+[116/9/26-12:43:53 415][INF][Px0ba4][Tx76f38210] read_uid| open user data file ./0b0cfc07fca81c956ab9181d8576f4a8/usr.dat failed, err = 13
+[116/9/26-12:43:53 415][VBS][Px0ba4][Tx76f38210] build_http_message| leave ok, http request message:
+POST /index.htm HTTP/1.1
+CT:text/plain
+Content-Length:172
+
+ver=MSSP+0%2E9&sub=tts&ssm=1&auf=audio%2FL16%3Brate%3D16000&vcn=xiaoyu&tte=UTF8&cmd=ssb&dvc=00%3A00%3A00%3A00%3A00%3A00&cver=3%2E0%2E0%2E1034&key=0c4G4KJ85svIzlOcJwQOirYw==
+[116/9/26-12:43:53 415][VBS][Px0ba4][Tx76f38210] send_recv_http_message| enter.
+[116/9/26-12:43:53 416][VBS][Px0ba4][Tx76f38210] connect_server| enter, transport = 0xfa6b78, connect status = 0
+[116/9/26-12:43:53 416][INF][Px0ba4][Tx76f38210] connect_server| connecting to 59.107.24.13:1028.
+[116/9/26-12:43:53 417][VBS][Px0ba4][Tx76f38210] sock thread resume...
+[116/9/26-12:43:53 437][VBS][Px0ba4][Tx76f38210] connect_server| leave ok.
+[116/9/26-12:43:53 437][VBS][Px0ba4][Tx76f38210] send_message| enter.
+[116/9/26-12:43:53 437][VBS][Px0ba4][Tx76f38210] send_message| leave ok.
+[116/9/26-12:43:53 437][VBS][Px0ba4][Tx76f38210] send_message| enter.
+[116/9/26-12:43:53 437][VBS][Px0ba4][Tx76f38210] send_message| leave ok.
+[116/9/26-12:43:53 437][VBS][Px0ba4][Tx76f38210] send_http_message| http request message has been sent out successfully
+[116/9/26-12:43:53 437][VBS][Px0ba4][Tx76f38210] recv_message| enter, offset = 0.
+[116/9/26-12:43:53 469][VBS][Px0ba4][Tx76f38210] recv_message| leave ok, msg len = 252.
+[116/9/26-12:43:53 470][VBS][Px0ba4][Tx76f38210] send_recv_http_message| leave, http response message:
+HTTP/1.1 200 OK
+Content-Length: 113
+X-Req-Date: 2016/10/26 20:43:53 437
+CT: text/plain
+CL: 113
+X-Res-Date: 2016/10/26 20:43:53 448
+
+ver=MSSP+0%2E9&ret=0&cver=3%2E0%2E0%2E1034&key=0dFh0AvEMjwhZB/ptB6mJVxgbbopMErL3z/0c16WC43IScacJAk0EnHchIrYcqcYpU
+[116/9/26-12:43:53 470][INF][Px0ba4][Tx76f38210] synth_session_begin| update net_rate as inf
+[116/9/26-12:43:53 470][VBS][Px0ba4][Tx76f38210] build_http_message| leave ok, http request message:
+POST /index.htm HTTP/1.1
+CT:mp;b=--
+Content-Length:227
+
+----
+CL:123
+CT:text/plain
+
+ver=MSSP+0%2E9&sub=tts&cmd=syn&cver=3%2E0%2E0%2E1034&key=0dFh0AvEMjwhZB/ptB6mJVxgbbopMErL3z/0c16WC43IRQ88KmQFXgvshIrYcqcYpU
+----
+CL:26
+CT:binary/synth+text
+
+hello world i am tongjinlv
+------
+[116/9/26-12:43:53 470][VBS][Px0ba4][Tx76f38210] send_recv_http_message| enter.
+[116/9/26-12:43:53 470][VBS][Px0ba4][Tx76f38210] connect_server| enter, transport = 0xfa6b78, connect status = 1
+[116/9/26-12:43:53 470][VBS][Px0ba4][Tx76f38210] connect_server| leave ok, connected already.
+[116/9/26-12:43:53 470][VBS][Px0ba4][Tx76f38210] send_message| enter.
+[116/9/26-12:43:53 470][VBS][Px0ba4][Tx76f38210] send_message| leave ok.
+[116/9/26-12:43:53 470][VBS][Px0ba4][Tx76f38210] send_message| enter.
+[116/9/26-12:43:53 470][VBS][Px0ba4][Tx76f38210] send_message| leave ok.
+[116/9/26-12:43:53 470][VBS][Px0ba4][Tx76f38210] send_http_message| http request message has been sent out successfully
+[116/9/26-12:43:53 470][VBS][Px0ba4][Tx76f38210] recv_message| enter, offset = 0.
+[116/9/26-12:43:53 502][VBS][Px0ba4][Tx76f38210] recv_message| leave ok, msg len = 252.
+[116/9/26-12:43:53 502][VBS][Px0ba4][Tx76f38210] send_recv_http_message| leave, http response message:
+HTTP/1.1 200 OK
+Content-Length: 113
+X-Req-Date: 2016/10/26 20:43:53 476
+CT: text/plain
+CL: 113
+X-Res-Date: 2016/10/26 20:43:53 481
+
+ver=MSSP+0%2E9&ret=0&cver=3%2E0%2E0%2E1034&key=0dFh0AvEMjwhZB/ptB6mJVxgbbopMErL3z/0c16WC43IRQ88KmQFXgvshIrYcqcYpU
+[116/9/26-12:43:53 502][VBS][Px0ba4][Tx76f38210] build_http_message| leave ok, http request message:
+POST /index.htm HTTP/1.1
+CT:text/plain
+Content-Length:123
+
+ver=MSSP+0%2E9&sub=tts&cmd=fch&cver=3%2E0%2E0%2E1034&key=0dFh0AvEMjwhZB/ptB6mJVxgbbopMErL3z/0c16WC43ISs2DurAZqtc8hIrYcqcYpU
+[116/9/26-12:43:53 502][VBS][Px0ba4][Tx76f38210] send_recv_http_message| enter.
+[116/9/26-12:43:53 502][VBS][Px0ba4][Tx76f38210] connect_server| enter, transport = 0xfa6b78, connect status = 1
+[116/9/26-12:43:53 502][VBS][Px0ba4][Tx76f38210] connect_server| leave ok, connected already.
+[116/9/26-12:43:53 502][VBS][Px0ba4][Tx76f38210] send_message| enter.
+[116/9/26-12:43:53 502][VBS][Px0ba4][Tx76f38210] send_message| leave ok.
+[116/9/26-12:43:53 502][VBS][Px0ba4][Tx76f38210] send_message| enter.
+[116/9/26-12:43:53 502][VBS][Px0ba4][Tx76f38210] send_message| leave ok.
+[116/9/26-12:43:53 502][VBS][Px0ba4][Tx76f38210] send_http_message| http request message has been sent out successfully
+[116/9/26-12:43:53 502][VBS][Px0ba4][Tx76f38210] recv_message| enter, offset = 0.
+[116/9/26-12:43:53 603][VBS][Px0ba4][Tx76f38210] recv_message| leave ok, msg len = 3997.
+[116/9/26-12:43:53 604][VBS][Px0ba4][Tx76f38210] send_recv_http_message| leave, http response message:
+HTTP/1.1 200 OK
+Content-Length: 3859
+X-Req-Date: 2016/10/26 20:43:53 504
+CT: mp;b=--
+CL: 3859
+X-Res-Date: 2016/10/26 20:43:53 570
+
+----
+CL:126
+
+ver=MSSP+0%2E9&ret=0&cver=3%2E0%2E0%2E1034&ced=26&ofg=1&key=0dFh0AvEMjwhZB/ptB6mJVxgbbopMErL3z/0c16WC43ISs2DurAZqtc8hIrYcqcYpU
+----
+CL:3660
+CT:binary/audio
+CE:speex-wb
+
+<6—jú&
+[116/9/26-12:43:53 614][VBS][Px0ba4][Tx76f38210] synth_audio_get| total 38400 bytes synthetic audio data got.
+[116/9/26-12:43:53 614][INF][Px0ba4][Tx76f38210] synth_audio_get| got first audio block.
+[116/9/26-12:43:53 615][VBS][Px0ba4][Tx76f38210] QTTSGetParam| enter, sessionID=msc-resource0001@synthesizer, paramName=upflow, valueLen=32
+[116/9/26-12:43:53 615][VBS][Px0ba4][Tx76f38210] QTTSGetParam| leave, ret=0, value=708, len = 3
+[116/9/26-12:43:53 615][VBS][Px0ba4][Tx76f38210] QTTSGetParam| enter, sessionID=msc-resource0001@synthesizer, paramName=downflow, valueLen=32
+[116/9/26-12:43:53 615][VBS][Px0ba4][Tx76f38210] QTTSGetParam| leave, ret=0, value=4501, len = 4
+[116/9/26-12:43:53 615][VBS][Px0ba4][Tx76f38210] build_http_message| leave ok, http request message:
+POST /index.htm HTTP/1.1
+CT:text/plain
+Content-Length:123
+
+ver=MSSP+0%2E9&sub=tts&cmd=fch&cver=3%2E0%2E0%2E1034&key=0dFh0AvEMjwhZB/ptB6mJVxgbbopMErL3z/0c16WC43ITGKfgFPMOlichIrYcqcYpU
+[116/9/26-12:43:53 615][VBS][Px0ba4][Tx76f38210] send_recv_http_message| enter.
+[116/9/26-12:43:53 615][VBS][Px0ba4][Tx76f38210] connect_server| enter, transport = 0xfa6b78, connect status = 1
+[116/9/26-12:43:53 615][VBS][Px0ba4][Tx76f38210] connect_server| leave ok, connected already.
+[116/9/26-12:43:53 615][VBS][Px0ba4][Tx76f38210] send_message| enter.
+[116/9/26-12:43:53 615][VBS][Px0ba4][Tx76f38210] send_message| leave ok.
+[116/9/26-12:43:53 615][VBS][Px0ba4][Tx76f38210] send_message| enter.
+[116/9/26-12:43:53 615][VBS][Px0ba4][Tx76f38210] send_message| leave ok.
+[116/9/26-12:43:53 615][VBS][Px0ba4][Tx76f38210] send_http_message| http request message has been sent out successfully
+[116/9/26-12:43:53 615][VBS][Px0ba4][Tx76f38210] recv_message| enter, offset = 0.
+[116/9/26-12:43:53 686][VBS][Px0ba4][Tx76f38210] recv_message| leave ok, msg len = 2533.
+[116/9/26-12:43:53 687][VBS][Px0ba4][Tx76f38210] send_recv_http_message| leave, http response message:
+HTTP/1.1 200 OK
+Content-Length: 2395
+X-Req-Date: 2016/10/26 20:43:53 618
+CT: mp;b=--
+CL: 2395
+X-Res-Date: 2016/10/26 20:43:53 657
+
+----
+CL:126
+
+ver=MSSP+0%2E9&ret=0&cver=3%2E0%2E0%2E1034&ced=26&ofg=2&key=0dFh0AvEMjwhZB/ptB6mJVxgbbopMErL3z/0c16WC43ITGKfgFPMOlichIrYcqcYpU
+----
+CL:2196
+CT:binary/audio
+CE:speex-wb
+
+<1ÈmžŽv!jEik;á@·øfåñ‹],®=­'¶ä®ÈÄG&™
+[116/9/26-12:43:53 693][VBS][Px0ba4][Tx76f38210] synth_audio_get| total 23040 bytes synthetic audio data got.
+[116/9/26-12:43:53 693][INF][Px0ba4][Tx76f38210] synth_audio_get| got last audio block.
+[116/9/26-12:43:53 693][VBS][Px0ba4][Tx76f38210] QTTSGetParam| enter, sessionID=msc-resource0001@synthesizer, paramName=upflow, valueLen=32
+[116/9/26-12:43:53 693][VBS][Px0ba4][Tx76f38210] QTTSGetParam| leave, ret=0, value=894, len = 3
+[116/9/26-12:43:53 693][VBS][Px0ba4][Tx76f38210] QTTSGetParam| enter, sessionID=msc-resource0001@synthesizer, paramName=downflow, valueLen=32
+[116/9/26-12:43:53 693][VBS][Px0ba4][Tx76f38210] QTTSGetParam| leave, ret=0, value=7034, len = 4
+[116/9/26-12:43:53 694][VBS][Px0ba4][Tx76f38210] build_http_message| leave ok, http request message:
+POST /index.htm HTTP/1.1
+CT:text/plain
+Content-Length:123
+
+ver=MSSP+0%2E9&sub=tts&cmd=sse&cver=3%2E0%2E0%2E1034&key=0dFh0AvEMjwhZB/ptB6mJVxgbbopMErL3z/0c16WC43ISUH13sAIadhchIrYcqcYpU
+[116/9/26-12:43:53 694][VBS][Px0ba4][Tx76f38210] connect_server| enter, transport = 0xfa6b78, connect status = 1
+[116/9/26-12:43:53 694][VBS][Px0ba4][Tx76f38210] connect_server| leave ok, connected already.
+[116/9/26-12:43:53 694][VBS][Px0ba4][Tx76f38210] send_message| enter.
+[116/9/26-12:43:53 694][VBS][Px0ba4][Tx76f38210] send_message| leave ok.
+[116/9/26-12:43:53 694][VBS][Px0ba4][Tx76f38210] send_message| enter.
+[116/9/26-12:43:53 694][VBS][Px0ba4][Tx76f38210] send_message| leave ok.
+[116/9/26-12:43:53 694][VBS][Px0ba4][Tx76f38210] send_http_message| http request message has been sent out successfully
+[116/9/26-12:43:53 694][VBS][Px0ba4][Tx76f38210] disconnect_server| enter.
+[116/9/26-12:43:53 694][VBS][Px0ba4][Tx76f38210] disconnect_server| leave ok.
+[116/9/26-12:43:53 694][INF][Px0ba4][Tx76f38210] synth_session_end| size of data uploaded by user: 1080(bytes), downloaded by user: 7034(bytes), effective data uploaded by user: 92(bytes), effective data downloaded by user: 5856(bytes).
+[116/9/26-12:43:53 694][VBS][Px0ba4][Tx76f38210] disconnect_server| enter.
+[116/9/26-12:43:53 694][VBS][Px0ba4][Tx76f38210] disconnect_server| leave ok.
+[116/9/26-12:43:53 694][VBS][Px0ba4][Tx76f38210] QTTSSessionEnd| reason: Normal.
+[116/9/26-12:43:53 694][INF][Px0ba4][Tx76f38210] fini_sess_info| open session error log file ./0b0cfc07fca81c956ab9181d8576f4a8/msc_sess_err.log failed, err = 13
+[116/9/26-12:43:53 694][INF][Px0ba4][Tx76f38210] fini_sess_info| open session performance log file ./0b0cfc07fca81c956ab9181d8576f4a8/msc_sess_perf.log failed, err = 13
+=============================================================
+	Mobile Speech Client End-Time: 116/9/26-12:43:53 694
+=============================================================
+=============================================================
+	iFlyTEK log file
+	Subject : Mobile Speech Client
+	Created-Time: 116/9/26-12:45:39 652
+	Application: ;÷v{ú~¡
+	PID: 2996 Version: 116/9/26-12:45:39 652
+=============================================================
+[116/9/26-12:45:39 652][INF][Px0bb4][Tx76f6d210] conf_init| The local config manager instance has been initialized successfully.
+[116/9/26-12:45:39 653][VBS][Px0bb4][Tx76f6d210] read_common_conf| read coding_libs from config file failed, use default value "libspeex.so".
+[116/9/26-12:45:39 653][INF][Px0bb4][Tx76f6d210] init_sess_info| open session error log file ./0b0cfc07fca81c956ab9181d8576f4a8/msc_sess_err.log failed, err = 13
+[116/9/26-12:45:39 653][INF][Px0bb4][Tx76f6d210] init_sess_info| open session performance log file ./0b0cfc07fca81c956ab9181d8576f4a8/msc_sess_perf.log failed, err = 13
+[116/9/26-12:45:39 653][INF][Px0bb4][Tx76f6d210] init_sess_info| got total 0 error info and 0 performance info to upload.
+[116/9/26-12:45:39 662][INF][Px0bb4][Tx76f6d210] get_ip_from_url| DNS: url input is dev.voicecloud.cn, corresponding ip is 59.107.24.13
+[116/9/26-12:45:39 663][VBS][Px0bb4][Tx76f6d210] synth_session_begin| enter.
+[116/9/26-12:45:39 663][VBS][Px0bb4][Tx76c03450] sock thread suspend...
+[116/9/26-12:45:39 663][INF][Px0bb4][Tx76f6d210] read_uid| open user data file ./usr.dat failed, err = 2
+[116/9/26-12:45:39 663][INF][Px0bb4][Tx76f6d210] read_uid| open user data file ./0b0cfc07fca81c956ab9181d8576f4a8/usr.dat failed, err = 13
+[116/9/26-12:45:39 664][VBS][Px0bb4][Tx76f6d210] build_http_message| leave ok, http request message:
+POST /index.htm HTTP/1.1
+CT:text/plain
+Content-Length:172
+
+ver=MSSP+0%2E9&sub=tts&ssm=1&auf=audio%2FL16%3Brate%3D16000&vcn=xiaoyu&tte=UTF8&cmd=ssb&dvc=00%3A00%3A00%3A00%3A00%3A00&cver=3%2E0%2E0%2E1034&key=0c4G4KJ85svIzlOcJwQOirYw==
+[116/9/26-12:45:39 664][VBS][Px0bb4][Tx76f6d210] send_recv_http_message| enter.
+[116/9/26-12:45:39 664][VBS][Px0bb4][Tx76f6d210] connect_server| enter, transport = 0x1dedb78, connect status = 0
+[116/9/26-12:45:39 665][INF][Px0bb4][Tx76f6d210] connect_server| connecting to 59.107.24.13:1028.
+[116/9/26-12:45:39 665][VBS][Px0bb4][Tx76f6d210] sock thread resume...
+[116/9/26-12:45:39 686][VBS][Px0bb4][Tx76f6d210] connect_server| leave ok.
+[116/9/26-12:45:39 686][VBS][Px0bb4][Tx76f6d210] send_message| enter.
+[116/9/26-12:45:39 686][VBS][Px0bb4][Tx76f6d210] send_message| leave ok.
+[116/9/26-12:45:39 686][VBS][Px0bb4][Tx76f6d210] send_message| enter.
+[116/9/26-12:45:39 686][VBS][Px0bb4][Tx76f6d210] send_message| leave ok.
+[116/9/26-12:45:39 686][VBS][Px0bb4][Tx76f6d210] send_http_message| http request message has been sent out successfully
+[116/9/26-12:45:39 686][VBS][Px0bb4][Tx76f6d210] recv_message| enter, offset = 0.
+[116/9/26-12:45:39 717][VBS][Px0bb4][Tx76f6d210] recv_message| leave ok, msg len = 252.
+[116/9/26-12:45:39 717][VBS][Px0bb4][Tx76f6d210] send_recv_http_message| leave, http response message:
+HTTP/1.1 200 OK
+Content-Length: 113
+X-Req-Date: 2016/10/26 20:45:39 681
+CT: text/plain
+CL: 113
+X-Res-Date: 2016/10/26 20:45:39 694
+
+ver=MSSP+0%2E9&ret=0&cver=3%2E0%2E0%2E1034&key=0dADFcdBm6xSnOKzzJMbGBlgAJwlBhuWO^Ya6v1NVG^EWcacJAk0EnHchIrYcqcYpU
+[116/9/26-12:45:39 717][INF][Px0bb4][Tx76f6d210] synth_session_begin| update net_rate as inf
+[116/9/26-12:45:39 717][VBS][Px0bb4][Tx76f6d210] build_http_message| leave ok, http request message:
+POST /index.htm HTTP/1.1
+CT:mp;b=--
+Content-Length:228
+
+----
+CL:123
+CT:text/plain
+
+ver=MSSP+0%2E9&sub=tts&cmd=syn&cver=3%2E0%2E0%2E1034&key=0dADFcdBm6xSnOKzzJMbGBlgAJwlBhuWO^Ya6v1NVG^EVQ88KmQFXgvshIrYcqcYpU
+----
+CL:27
+CT:binary/synth+text
+
+hello world can i hellp you
+------
+[116/9/26-12:45:39 718][VBS][Px0bb4][Tx76f6d210] send_recv_http_message| enter.
+[116/9/26-12:45:39 718][VBS][Px0bb4][Tx76f6d210] connect_server| enter, transport = 0x1dedb78, connect status = 1
+[116/9/26-12:45:39 718][VBS][Px0bb4][Tx76f6d210] connect_server| leave ok, connected already.
+[116/9/26-12:45:39 718][VBS][Px0bb4][Tx76f6d210] send_message| enter.
+[116/9/26-12:45:39 718][VBS][Px0bb4][Tx76f6d210] send_message| leave ok.
+[116/9/26-12:45:39 718][VBS][Px0bb4][Tx76f6d210] send_message| enter.
+[116/9/26-12:45:39 718][VBS][Px0bb4][Tx76f6d210] send_message| leave ok.
+[116/9/26-12:45:39 718][VBS][Px0bb4][Tx76f6d210] send_http_message| http request message has been sent out successfully
+[116/9/26-12:45:39 718][VBS][Px0bb4][Tx76f6d210] recv_message| enter, offset = 0.
+[116/9/26-12:45:39 769][VBS][Px0bb4][Tx76f6d210] recv_message| leave ok, msg len = 252.
+[116/9/26-12:45:39 769][VBS][Px0bb4][Tx76f6d210] send_recv_http_message| leave, http response message:
+HTTP/1.1 200 OK
+Content-Length: 113
+X-Req-Date: 2016/10/26 20:45:39 716
+CT: text/plain
+CL: 113
+X-Res-Date: 2016/10/26 20:45:39 739
+
+ver=MSSP+0%2E9&ret=0&cver=3%2E0%2E0%2E1034&key=0dADFcdBm6xSnOKzzJMbGBlgAJwlBhuWO^Ya6v1NVG^EVQ88KmQFXgvshIrYcqcYpU
+[116/9/26-12:45:39 769][VBS][Px0bb4][Tx76f6d210] build_http_message| leave ok, http request message:
+POST /index.htm HTTP/1.1
+CT:text/plain
+Content-Length:123
+
+ver=MSSP+0%2E9&sub=tts&cmd=fch&cver=3%2E0%2E0%2E1034&key=0dADFcdBm6xSnOKzzJMbGBlgAJwlBhuWO^Ya6v1NVG^EWs2DurAZqtc8hIrYcqcYpU
+[116/9/26-12:45:39 769][VBS][Px0bb4][Tx76f6d210] send_recv_http_message| enter.
+[116/9/26-12:45:39 769][VBS][Px0bb4][Tx76f6d210] connect_server| enter, transport = 0x1dedb78, connect status = 1
+[116/9/26-12:45:39 769][VBS][Px0bb4][Tx76f6d210] connect_server| leave ok, connected already.
+[116/9/26-12:45:39 769][VBS][Px0bb4][Tx76f6d210] send_message| enter.
+[116/9/26-12:45:39 769][VBS][Px0bb4][Tx76f6d210] send_message| leave ok.
+[116/9/26-12:45:39 769][VBS][Px0bb4][Tx76f6d210] send_message| enter.
+[116/9/26-12:45:39 769][VBS][Px0bb4][Tx76f6d210] send_message| leave ok.
+[116/9/26-12:45:39 769][VBS][Px0bb4][Tx76f6d210] send_http_message| http request message has been sent out successfully
+[116/9/26-12:45:39 769][VBS][Px0bb4][Tx76f6d210] recv_message| enter, offset = 0.
+[116/9/26-12:45:39 851][VBS][Px0bb4][Tx76f6d210] recv_message| leave ok, msg len = 4180.
+[116/9/26-12:45:39 851][VBS][Px0bb4][Tx76f6d210] send_recv_http_message| leave, http response message:
+HTTP/1.1 200 OK
+Content-Length: 4042
+X-Req-Date: 2016/10/26 20:45:39 764
+CT: mp;b=--
+CL: 4042
+X-Res-Date: 2016/10/26 20:45:39 811
+
+----
+CL:126
+
+ver=MSSP+0%2E9&ret=0&cver=3%2E0%2E0%2E1034&ced=27&ofg=1&key=0dADFcdBm6xSnOKzzJMbGBlgAJwlBhuWO^Ya6v1NVG^EWs2DurAZqtc8hIrYcqcYpU
+----
+CL:3843
+CT:binary/audio
+CE:speex-wb
+
+<6—jú&
+[116/9/26-12:45:39 862][VBS][Px0bb4][Tx76f6d210] synth_audio_get| total 40320 bytes synthetic audio data got.
+[116/9/26-12:45:39 862][INF][Px0bb4][Tx76f6d210] synth_audio_get| got first audio block.
+[116/9/26-12:45:39 862][VBS][Px0bb4][Tx76f6d210] QTTSGetParam| enter, sessionID=msc-resource0001@synthesizer, paramName=upflow, valueLen=32
+[116/9/26-12:45:39 862][VBS][Px0bb4][Tx76f6d210] QTTSGetParam| leave, ret=0, value=709, len = 3
+[116/9/26-12:45:39 862][VBS][Px0bb4][Tx76f6d210] QTTSGetParam| enter, sessionID=msc-resource0001@synthesizer, paramName=downflow, valueLen=32
+[116/9/26-12:45:39 862][VBS][Px0bb4][Tx76f6d210] QTTSGetParam| leave, ret=0, value=4684, len = 4
+[116/9/26-12:45:39 863][VBS][Px0bb4][Tx76f6d210] build_http_message| leave ok, http request message:
+POST /index.htm HTTP/1.1
+CT:text/plain
+Content-Length:123
+
+ver=MSSP+0%2E9&sub=tts&cmd=fch&cver=3%2E0%2E0%2E1034&key=0dADFcdBm6xSnOKzzJMbGBlgAJwlBhuWO^Ya6v1NVG^EXGKfgFPMOlichIrYcqcYpU
+[116/9/26-12:45:39 863][VBS][Px0bb4][Tx76f6d210] send_recv_http_message| enter.
+[116/9/26-12:45:39 863][VBS][Px0bb4][Tx76f6d210] connect_server| enter, transport = 0x1dedb78, connect status = 1
+[116/9/26-12:45:39 863][VBS][Px0bb4][Tx76f6d210] connect_server| leave ok, connected already.
+[116/9/26-12:45:39 863][VBS][Px0bb4][Tx76f6d210] send_message| enter.
+[116/9/26-12:45:39 863][VBS][Px0bb4][Tx76f6d210] send_message| leave ok.
+[116/9/26-12:45:39 863][VBS][Px0bb4][Tx76f6d210] send_message| enter.
+[116/9/26-12:45:39 863][VBS][Px0bb4][Tx76f6d210] send_message| leave ok.
+[116/9/26-12:45:39 863][VBS][Px0bb4][Tx76f6d210] send_http_message| http request message has been sent out successfully
+[116/9/26-12:45:39 863][VBS][Px0bb4][Tx76f6d210] recv_message| enter, offset = 0.
+[116/9/26-12:45:39 995][VBS][Px0bb4][Tx76f6d210] recv_message| leave ok, msg len = 2045.
+[116/9/26-12:45:39 995][VBS][Px0bb4][Tx76f6d210] send_recv_http_message| leave, http response message:
+HTTP/1.1 200 OK
+Content-Length: 1907
+X-Req-Date: 2016/10/26 20:45:39 867
+CT: mp;b=--
+CL: 1907
+X-Res-Date: 2016/10/26 20:45:39 965
+
+----
+CL:126
+
+ver=MSSP+0%2E9&ret=0&cver=3%2E0%2E0%2E1034&ced=27&ofg=2&key=0dADFcdBm6xSnOKzzJMbGBlgAJwlBhuWO^Ya6v1NVG^EXGKfgFPMOlichIrYcqcYpU
+----
+CL:1708
+CT:binary/audio
+CE:speex-wb
+
+<3•²ýt~Ý°Ö–™7!@;º¼ØR…ûüÍ†6ˆ‚ÑÍ¡Ñ«ç¤®sý-ÅªÜ€µ­µ­`Åƒ`Â-—<0
+`ê´“›D§è:ØÍéwÄrÏ½ù’5­Þƒý$ýœVè«“ì¾±º>ªU×êÝ
+[116/9/26-12:45:40 000][VBS][Px0bb4][Tx76f6d210] synth_audio_get| total 17920 bytes synthetic audio data got.
+[116/9/26-12:45:40 000][INF][Px0bb4][Tx76f6d210] synth_audio_get| got last audio block.
+[116/9/26-12:45:40 000][VBS][Px0bb4][Tx76f6d210] QTTSGetParam| enter, sessionID=msc-resource0001@synthesizer, paramName=upflow, valueLen=32
+[116/9/26-12:45:40 000][VBS][Px0bb4][Tx76f6d210] QTTSGetParam| leave, ret=0, value=895, len = 3
+[116/9/26-12:45:40 000][VBS][Px0bb4][Tx76f6d210] QTTSGetParam| enter, sessionID=msc-resource0001@synthesizer, paramName=downflow, valueLen=32
+[116/9/26-12:45:40 000][VBS][Px0bb4][Tx76f6d210] QTTSGetParam| leave, ret=0, value=6729, len = 4
+[116/9/26-12:45:40 001][VBS][Px0bb4][Tx76f6d210] build_http_message| leave ok, http request message:
+POST /index.htm HTTP/1.1
+CT:text/plain
+Content-Length:123
+
+ver=MSSP+0%2E9&sub=tts&cmd=sse&cver=3%2E0%2E0%2E1034&key=0dADFcdBm6xSnOKzzJMbGBlgAJwlBhuWO^Ya6v1NVG^EWUH13sAIadhchIrYcqcYpU
+[116/9/26-12:45:40 001][VBS][Px0bb4][Tx76f6d210] connect_server| enter, transport = 0x1dedb78, connect status = 1
+[116/9/26-12:45:40 001][VBS][Px0bb4][Tx76f6d210] connect_server| leave ok, connected already.
+[116/9/26-12:45:40 001][VBS][Px0bb4][Tx76f6d210] send_message| enter.
+[116/9/26-12:45:40 001][VBS][Px0bb4][Tx76f6d210] send_message| leave ok.
+[116/9/26-12:45:40 001][VBS][Px0bb4][Tx76f6d210] send_message| enter.
+[116/9/26-12:45:40 001][VBS][Px0bb4][Tx76f6d210] send_message| leave ok.
+[116/9/26-12:45:40 001][VBS][Px0bb4][Tx76f6d210] send_http_message| http request message has been sent out successfully
+[116/9/26-12:45:40 001][VBS][Px0bb4][Tx76f6d210] disconnect_server| enter.
+[116/9/26-12:45:40 001][VBS][Px0bb4][Tx76f6d210] disconnect_server| leave ok.
+[116/9/26-12:45:40 001][INF][Px0bb4][Tx76f6d210] synth_session_end| size of data uploaded by user: 1081(bytes), downloaded by user: 6729(bytes), effective data uploaded by user: 93(bytes), effective data downloaded by user: 5551(bytes).
+[116/9/26-12:45:40 001][VBS][Px0bb4][Tx76f6d210] disconnect_server| enter.
+[116/9/26-12:45:40 001][VBS][Px0bb4][Tx76f6d210] disconnect_server| leave ok.
+[116/9/26-12:45:40 001][VBS][Px0bb4][Tx76f6d210] QTTSSessionEnd| reason: Normal.
+[116/9/26-12:45:40 001][INF][Px0bb4][Tx76f6d210] fini_sess_info| open session error log file ./0b0cfc07fca81c956ab9181d8576f4a8/msc_sess_err.log failed, err = 13
+[116/9/26-12:45:40 001][INF][Px0bb4][Tx76f6d210] fini_sess_info| open session performance log file ./0b0cfc07fca81c956ab9181d8576f4a8/msc_sess_perf.log failed, err = 13
+=============================================================
+	Mobile Speech Client End-Time: 116/9/26-12:45:40 001
+=============================================================
+=============================================================
+	iFlyTEK log file
+	Subject : Mobile Speech Client
+	Created-Time: 116/9/26-12:46:47 957
+	Application: +ýv;þ~¡
+	PID: 3009 Version: 116/9/26-12:46:47 957
+=============================================================
+[116/9/26-12:46:47 957][INF][Px0bc1][Tx76fcc210] conf_init| The local config manager instance has been initialized successfully.
+[116/9/26-12:46:47 957][VBS][Px0bc1][Tx76fcc210] read_common_conf| read coding_libs from config file failed, use default value "libspeex.so".
+[116/9/26-12:46:47 958][INF][Px0bc1][Tx76fcc210] init_sess_info| open session error log file ./0b0cfc07fca81c956ab9181d8576f4a8/msc_sess_err.log failed, err = 13
+[116/9/26-12:46:47 958][INF][Px0bc1][Tx76fcc210] init_sess_info| open session performance log file ./0b0cfc07fca81c956ab9181d8576f4a8/msc_sess_perf.log failed, err = 13
+[116/9/26-12:46:47 958][INF][Px0bc1][Tx76fcc210] init_sess_info| got total 0 error info and 0 performance info to upload.
+[116/9/26-12:46:47 967][VBS][Px0bc1][Tx76c62450] sock thread suspend...
+[116/9/26-12:46:47 970][INF][Px0bc1][Tx76fcc210] get_ip_from_url| DNS: url input is dev.voicecloud.cn, corresponding ip is 59.107.24.13
+[116/9/26-12:46:47 971][VBS][Px0bc1][Tx76fcc210] synth_session_begin| enter.
+[116/9/26-12:46:47 971][INF][Px0bc1][Tx76fcc210] read_uid| open user data file ./usr.dat failed, err = 2
+[116/9/26-12:46:47 971][INF][Px0bc1][Tx76fcc210] read_uid| open user data file ./0b0cfc07fca81c956ab9181d8576f4a8/usr.dat failed, err = 13
+[116/9/26-12:46:47 971][VBS][Px0bc1][Tx76fcc210] build_http_message| leave ok, http request message:
+POST /index.htm HTTP/1.1
+CT:text/plain
+Content-Length:175
+
+ver=MSSP+0%2E9&sub=tts&ssm=1&auf=audio%2FL16%3Brate%3D16000&vcn=Catherine&tte=UTF8&cmd=ssb&dvc=00%3A00%3A00%3A00%3A00%3A00&cver=3%2E0%2E0%2E1034&key=0c4G4KJ85svIzlOcJwQOirYw==
+[116/9/26-12:46:47 971][VBS][Px0bc1][Tx76fcc210] send_recv_http_message| enter.
+[116/9/26-12:46:47 971][VBS][Px0bc1][Tx76fcc210] connect_server| enter, transport = 0x202b78, connect status = 0
+[116/9/26-12:46:47 972][INF][Px0bc1][Tx76fcc210] connect_server| connecting to 59.107.24.13:1028.
+[116/9/26-12:46:47 973][VBS][Px0bc1][Tx76fcc210] sock thread resume...
+[116/9/26-12:46:47 983][VBS][Px0bc1][Tx76fcc210] connect_server| leave ok.
+[116/9/26-12:46:47 983][VBS][Px0bc1][Tx76fcc210] send_message| enter.
+[116/9/26-12:46:47 983][VBS][Px0bc1][Tx76fcc210] send_message| leave ok.
+[116/9/26-12:46:47 983][VBS][Px0bc1][Tx76fcc210] send_message| enter.
+[116/9/26-12:46:47 983][VBS][Px0bc1][Tx76fcc210] send_message| leave ok.
+[116/9/26-12:46:47 983][VBS][Px0bc1][Tx76fcc210] send_http_message| http request message has been sent out successfully
+[116/9/26-12:46:47 983][VBS][Px0bc1][Tx76fcc210] recv_message| enter, offset = 0.
+[116/9/26-12:46:48 026][VBS][Px0bc1][Tx76fcc210] recv_message| leave ok, msg len = 252.
+[116/9/26-12:46:48 026][VBS][Px0bc1][Tx76fcc210] send_recv_http_message| leave, http response message:
+HTTP/1.1 200 OK
+Content-Length: 113
+X-Req-Date: 2016/10/26 20:46:47 988
+CT: text/plain
+CL: 113
+X-Res-Date: 2016/10/26 20:46:47 997
+
+ver=MSSP+0%2E9&ret=0&cver=3%2E0%2E0%2E1034&key=0dsW4/5w4Kba9evxueIsHsInxsaKI3IVsIK88RyCyL5IqcacJAk0EnHchIrYcqcYpU
+[116/9/26-12:46:48 026][INF][Px0bc1][Tx76fcc210] synth_session_begin| update net_rate as inf
+[116/9/26-12:46:48 026][VBS][Px0bc1][Tx76fcc210] build_http_message| leave ok, http request message:
+POST /index.htm HTTP/1.1
+CT:mp;b=--
+Content-Length:228
+
+----
+CL:123
+CT:text/plain
+
+ver=MSSP+0%2E9&sub=tts&cmd=syn&cver=3%2E0%2E0%2E1034&key=0dsW4/5w4Kba9evxueIsHsInxsaKI3IVsIK88RyCyL5IpQ88KmQFXgvshIrYcqcYpU
+----
+CL:27
+CT:binary/synth+text
+
+hello world can i hellp you
+------
+[116/9/26-12:46:48 026][VBS][Px0bc1][Tx76fcc210] send_recv_http_message| enter.
+[116/9/26-12:46:48 026][VBS][Px0bc1][Tx76fcc210] connect_server| enter, transport = 0x202b78, connect status = 1
+[116/9/26-12:46:48 026][VBS][Px0bc1][Tx76fcc210] connect_server| leave ok, connected already.
+[116/9/26-12:46:48 026][VBS][Px0bc1][Tx76fcc210] send_message| enter.
+[116/9/26-12:46:48 027][VBS][Px0bc1][Tx76fcc210] send_message| leave ok.
+[116/9/26-12:46:48 027][VBS][Px0bc1][Tx76fcc210] send_message| enter.
+[116/9/26-12:46:48 027][VBS][Px0bc1][Tx76fcc210] send_message| leave ok.
+[116/9/26-12:46:48 027][VBS][Px0bc1][Tx76fcc210] send_http_message| http request message has been sent out successfully
+[116/9/26-12:46:48 027][VBS][Px0bc1][Tx76fcc210] recv_message| enter, offset = 0.
+[116/9/26-12:46:48 099][VBS][Px0bc1][Tx76fcc210] recv_message| leave ok, msg len = 250.
+[116/9/26-12:46:48 099][VBS][Px0bc1][Tx76fcc210] send_recv_http_message| leave, http response message:
+HTTP/1.1 200 OK
+Content-Length: 113
+X-Req-Date: 2016/10/26 20:46:48 35
+CT: text/plain
+CL: 113
+X-Res-Date: 2016/10/26 20:46:48 78
+
+ver=MSSP+0%2E9&ret=0&cver=3%2E0%2E0%2E1034&key=0dsW4/5w4Kba9evxueIsHsInxsaKI3IVsIK88RyCyL5IpQ88KmQFXgvshIrYcqcYpU
+[116/9/26-12:46:48 099][VBS][Px0bc1][Tx76fcc210] build_http_message| leave ok, http request message:
+POST /index.htm HTTP/1.1
+CT:text/plain
+Content-Length:123
+
+ver=MSSP+0%2E9&sub=tts&cmd=fch&cver=3%2E0%2E0%2E1034&key=0dsW4/5w4Kba9evxueIsHsInxsaKI3IVsIK88RyCyL5Iqs2DurAZqtc8hIrYcqcYpU
+[116/9/26-12:46:48 099][VBS][Px0bc1][Tx76fcc210] send_recv_http_message| enter.
+[116/9/26-12:46:48 099][VBS][Px0bc1][Tx76fcc210] connect_server| enter, transport = 0x202b78, connect status = 1
+[116/9/26-12:46:48 099][VBS][Px0bc1][Tx76fcc210] connect_server| leave ok, connected already.
+[116/9/26-12:46:48 099][VBS][Px0bc1][Tx76fcc210] send_message| enter.
+[116/9/26-12:46:48 099][VBS][Px0bc1][Tx76fcc210] send_message| leave ok.
+[116/9/26-12:46:48 100][VBS][Px0bc1][Tx76fcc210] send_message| enter.
+[116/9/26-12:46:48 100][VBS][Px0bc1][Tx76fcc210] send_message| leave ok.
+[116/9/26-12:46:48 100][VBS][Px0bc1][Tx76fcc210] send_http_message| http request message has been sent out successfully
+[116/9/26-12:46:48 100][VBS][Px0bc1][Tx76fcc210] recv_message| enter, offset = 0.
+[116/9/26-12:46:48 223][VBS][Px0bc1][Tx76fcc210] recv_message| leave ok, msg len = 3509.
+[116/9/26-12:46:48 223][VBS][Px0bc1][Tx76fcc210] send_recv_http_message| leave, http response message:
+HTTP/1.1 200 OK
+Content-Length: 3371
+X-Req-Date: 2016/10/26 20:46:48 100
+CT: mp;b=--
+CL: 3371
+X-Res-Date: 2016/10/26 20:46:48 180
+
+----
+CL:126
+
+ver=MSSP+0%2E9&ret=0&cver=3%2E0%2E0%2E1034&ced=27&ofg=1&key=0dsW4/5w4Kba9evxueIsHsInxsaKI3IVsIK88RyCyL5Iqs2DurAZqtc8hIrYcqcYpU
+----
+CL:3172
+CT:binary/audio
+CE:speex-wb
+
+<3‰!º`
+[116/9/26-12:46:48 243][VBS][Px0bc1][Tx76fcc210] synth_audio_get| total 33280 bytes synthetic audio data got.
+[116/9/26-12:46:48 243][INF][Px0bc1][Tx76fcc210] synth_audio_get| got first audio block.
+[116/9/26-12:46:48 243][VBS][Px0bc1][Tx76fcc210] QTTSGetParam| enter, sessionID=msc-resource0001@synthesizer, paramName=upflow, valueLen=32
+[116/9/26-12:46:48 243][VBS][Px0bc1][Tx76fcc210] QTTSGetParam| leave, ret=0, value=712, len = 3
+[116/9/26-12:46:48 243][VBS][Px0bc1][Tx76fcc210] QTTSGetParam| enter, sessionID=msc-resource0001@synthesizer, paramName=downflow, valueLen=32
+[116/9/26-12:46:48 243][VBS][Px0bc1][Tx76fcc210] QTTSGetParam| leave, ret=0, value=4011, len = 4
+[116/9/26-12:46:48 244][VBS][Px0bc1][Tx76fcc210] build_http_message| leave ok, http request message:
+POST /index.htm HTTP/1.1
+CT:text/plain
+Content-Length:123
+
+ver=MSSP+0%2E9&sub=tts&cmd=fch&cver=3%2E0%2E0%2E1034&key=0dsW4/5w4Kba9evxueIsHsInxsaKI3IVsIK88RyCyL5IrGKfgFPMOlichIrYcqcYpU
+[116/9/26-12:46:48 244][VBS][Px0bc1][Tx76fcc210] send_recv_http_message| enter.
+[116/9/26-12:46:48 244][VBS][Px0bc1][Tx76fcc210] connect_server| enter, transport = 0x202b78, connect status = 1
+[116/9/26-12:46:48 244][VBS][Px0bc1][Tx76fcc210] connect_server| leave ok, connected already.
+[116/9/26-12:46:48 244][VBS][Px0bc1][Tx76fcc210] send_message| enter.
+[116/9/26-12:46:48 244][VBS][Px0bc1][Tx76fcc210] send_message| leave ok.
+[116/9/26-12:46:48 244][VBS][Px0bc1][Tx76fcc210] send_message| enter.
+[116/9/26-12:46:48 244][VBS][Px0bc1][Tx76fcc210] send_message| leave ok.
+[116/9/26-12:46:48 244][VBS][Px0bc1][Tx76fcc210] send_http_message| http request message has been sent out successfully
+[116/9/26-12:46:48 244][VBS][Px0bc1][Tx76fcc210] recv_message| enter, offset = 0.
+[116/9/26-12:46:48 446][WAN][Px0bc1][Tx76fcc210] recv_message| leave, receive message from server timeout!
+[116/9/26-12:46:48 446][VBS][Px0bc1][Tx76fcc210] recv_message| enter, offset = 0.
+[116/9/26-12:46:48 518][VBS][Px0bc1][Tx76fcc210] recv_message| leave ok, msg len = 2655.
+[116/9/26-12:46:48 518][VBS][Px0bc1][Tx76fcc210] send_recv_http_message| leave, http response message:
+HTTP/1.1 200 OK
+Content-Length: 2517
+X-Req-Date: 2016/10/26 20:46:48 264
+CT: mp;b=--
+CL: 2517
+X-Res-Date: 2016/10/26 20:46:48 489
+
+----
+CL:126
+
+ver=MSSP+0%2E9&ret=0&cver=3%2E0%2E0%2E1034&ced=27&ofg=2&key=0dsW4/5w4Kba9evxueIsHsInxsaKI3IVsIK88RyCyL5IrGKfgFPMOlichIrYcqcYpU
+----
+CL:2318
+CT:binary/audio
+CE:speex-wb
+
+<2Y¬êU;gÜèÈ:šçŒœ¿‘’}›<Úbhß¿Î&íËR/
+›¡ÝÁyäÇäZøóí”Glôïh³öW<3P¼/õ/Þ«uèÈ‹‰u	Ÿ¾1ì	Íòýê*- SlFUf	-°$m•ÑqZÉ9Z:Ävp Ž;B v€„<3ÁÑVˆÞúSÝÄÍGÝ*B÷
+âÓÁúºLEÖöNòrß!•¢ðí
+»1{ò°JAÂÇ‘b××<3÷=ÖÂwlwÌ’ÖM„Dõ§®6f‘›ãÑwÇèæ„¼±½lÿcYQ£º:À»C Þ÷óà…×<3îÓ–µW‚WŠëóD°»€½OÔ
+[116/9/26-12:46:48 533][VBS][Px0bc1][Tx76fcc210] synth_audio_get| total 24320 bytes synthetic audio data got.
+[116/9/26-12:46:48 533][INF][Px0bc1][Tx76fcc210] synth_audio_get| got last audio block.
+[116/9/26-12:46:48 533][VBS][Px0bc1][Tx76fcc210] QTTSGetParam| enter, sessionID=msc-resource0001@synthesizer, paramName=upflow, valueLen=32
+[116/9/26-12:46:48 533][VBS][Px0bc1][Tx76fcc210] QTTSGetParam| leave, ret=0, value=898, len = 3
+[116/9/26-12:46:48 533][VBS][Px0bc1][Tx76fcc210] QTTSGetParam| enter, sessionID=msc-resource0001@synthesizer, paramName=downflow, valueLen=32
+[116/9/26-12:46:48 533][VBS][Px0bc1][Tx76fcc210] QTTSGetParam| leave, ret=0, value=6666, len = 4
+[116/9/26-12:46:48 534][VBS][Px0bc1][Tx76fcc210] build_http_message| leave ok, http request message:
+POST /index.htm HTTP/1.1
+CT:text/plain
+Content-Length:123
+
+ver=MSSP+0%2E9&sub=tts&cmd=sse&cver=3%2E0%2E0%2E1034&key=0dsW4/5w4Kba9evxueIsHsInxsaKI3IVsIK88RyCyL5IqUH13sAIadhchIrYcqcYpU
+[116/9/26-12:46:48 534][VBS][Px0bc1][Tx76fcc210] connect_server| enter, transport = 0x202b78, connect status = 1
+[116/9/26-12:46:48 534][VBS][Px0bc1][Tx76fcc210] connect_server| leave ok, connected already.
+[116/9/26-12:46:48 534][VBS][Px0bc1][Tx76fcc210] send_message| enter.
+[116/9/26-12:46:48 534][VBS][Px0bc1][Tx76fcc210] send_message| leave ok.
+[116/9/26-12:46:48 534][VBS][Px0bc1][Tx76fcc210] send_message| enter.
+[116/9/26-12:46:48 534][VBS][Px0bc1][Tx76fcc210] send_message| leave ok.
+[116/9/26-12:46:48 535][VBS][Px0bc1][Tx76fcc210] send_http_message| http request message has been sent out successfully
+[116/9/26-12:46:48 535][VBS][Px0bc1][Tx76fcc210] disconnect_server| enter.
+[116/9/26-12:46:48 535][VBS][Px0bc1][Tx76fcc210] disconnect_server| leave ok.
+[116/9/26-12:46:48 535][INF][Px0bc1][Tx76fcc210] synth_session_end| size of data uploaded by user: 1084(bytes), downloaded by user: 6666(bytes), effective data uploaded by user: 93(bytes), effective data downloaded by user: 5490(bytes).
+[116/9/26-12:46:48 535][VBS][Px0bc1][Tx76fcc210] disconnect_server| enter.
+[116/9/26-12:46:48 535][VBS][Px0bc1][Tx76fcc210] disconnect_server| leave ok.
+[116/9/26-12:46:48 535][VBS][Px0bc1][Tx76fcc210] QTTSSessionEnd| reason: Normal.
+[116/9/26-12:46:48 535][INF][Px0bc1][Tx76fcc210] fini_sess_info| open session error log file ./0b0cfc07fca81c956ab9181d8576f4a8/msc_sess_err.log failed, err = 13
+[116/9/26-12:46:48 535][INF][Px0bc1][Tx76fcc210] fini_sess_info| open session performance log file ./0b0cfc07fca81c956ab9181d8576f4a8/msc_sess_perf.log failed, err = 13
+=============================================================
+	Mobile Speech Client End-Time: 116/9/26-12:46:48 535
+=============================================================
+=============================================================
+	iFlyTEK log file
+	Subject : Mobile Speech Client
+	Created-Time: 116/9/26-12:47:36 563
+	Application: ‹ÿv{‹~¡
+	PID: 3015 Version: 116/9/26-12:47:36 563
+=============================================================
+[116/9/26-12:47:36 563][INF][Px0bc7][Tx76ff2210] conf_init| The local config manager instance has been initialized successfully.
+[116/9/26-12:47:36 564][VBS][Px0bc7][Tx76ff2210] read_common_conf| read coding_libs from config file failed, use default value "libspeex.so".
+[116/9/26-12:47:36 564][INF][Px0bc7][Tx76ff2210] init_sess_info| open session error log file ./0b0cfc07fca81c956ab9181d8576f4a8/msc_sess_err.log failed, err = 13
+[116/9/26-12:47:36 564][INF][Px0bc7][Tx76ff2210] init_sess_info| open session performance log file ./0b0cfc07fca81c956ab9181d8576f4a8/msc_sess_perf.log failed, err = 13
+[116/9/26-12:47:36 564][INF][Px0bc7][Tx76ff2210] init_sess_info| got total 0 error info and 0 performance info to upload.
+[116/9/26-12:47:36 574][VBS][Px0bc7][Tx76c88450] sock thread suspend...
+[116/9/26-12:47:36 578][INF][Px0bc7][Tx76ff2210] get_ip_from_url| DNS: url input is dev.voicecloud.cn, corresponding ip is 59.107.24.13
+[116/9/26-12:47:36 578][VBS][Px0bc7][Tx76ff2210] synth_session_begin| enter.
+[116/9/26-12:47:36 578][INF][Px0bc7][Tx76ff2210] read_uid| open user data file ./usr.dat failed, err = 2
+[116/9/26-12:47:36 578][INF][Px0bc7][Tx76ff2210] read_uid| open user data file ./0b0cfc07fca81c956ab9181d8576f4a8/usr.dat failed, err = 13
+[116/9/26-12:47:36 579][VBS][Px0bc7][Tx76ff2210] build_http_message| leave ok, http request message:
+POST /index.htm HTTP/1.1
+CT:text/plain
+Content-Length:175
+
+ver=MSSP+0%2E9&sub=tts&ssm=1&auf=audio%2FL16%3Brate%3D16000&vcn=Catherine&tte=UTF8&cmd=ssb&dvc=00%3A00%3A00%3A00%3A00%3A00&cver=3%2E0%2E0%2E1034&key=0c4G4KJ85svIzlOcJwQOirYw==
+[116/9/26-12:47:36 579][VBS][Px0bc7][Tx76ff2210] send_recv_http_message| enter.
+[116/9/26-12:47:36 579][VBS][Px0bc7][Tx76ff2210] connect_server| enter, transport = 0x1203b78, connect status = 0
+[116/9/26-12:47:36 580][INF][Px0bc7][Tx76ff2210] connect_server| connecting to 59.107.24.13:1028.
+[116/9/26-12:47:36 580][VBS][Px0bc7][Tx76ff2210] sock thread resume...
+[116/9/26-12:47:36 600][VBS][Px0bc7][Tx76ff2210] connect_server| leave ok.
+[116/9/26-12:47:36 601][VBS][Px0bc7][Tx76ff2210] send_message| enter.
+[116/9/26-12:47:36 601][VBS][Px0bc7][Tx76ff2210] send_message| leave ok.
+[116/9/26-12:47:36 601][VBS][Px0bc7][Tx76ff2210] send_message| enter.
+[116/9/26-12:47:36 601][VBS][Px0bc7][Tx76ff2210] send_message| leave ok.
+[116/9/26-12:47:36 601][VBS][Px0bc7][Tx76ff2210] send_http_message| http request message has been sent out successfully
+[116/9/26-12:47:36 601][VBS][Px0bc7][Tx76ff2210] recv_message| enter, offset = 0.
+[116/9/26-12:47:36 633][VBS][Px0bc7][Tx76ff2210] recv_message| leave ok, msg len = 252.
+[116/9/26-12:47:36 633][VBS][Px0bc7][Tx76ff2210] send_recv_http_message| leave, http response message:
+HTTP/1.1 200 OK
+Content-Length: 113
+X-Req-Date: 2016/10/26 20:47:36 595
+CT: text/plain
+CL: 113
+X-Res-Date: 2016/10/26 20:47:36 608
+
+ver=MSSP+0%2E9&ret=0&cver=3%2E0%2E0%2E1034&key=0dxbOoiAoIdmlYzMkwBjjToAAJwlBhuWO^tBuYsEdkzAKcacJAk0EnHchIrYcqcYpU
+[116/9/26-12:47:36 633][INF][Px0bc7][Tx76ff2210] synth_session_begin| update net_rate as inf
+[116/9/26-12:47:36 633][VBS][Px0bc7][Tx76ff2210] build_http_message| leave ok, http request message:
+POST /index.htm HTTP/1.1
+CT:mp;b=--
+Content-Length:228
+
+----
+CL:123
+CT:text/plain
+
+ver=MSSP+0%2E9&sub=tts&cmd=syn&cver=3%2E0%2E0%2E1034&key=0dxbOoiAoIdmlYzMkwBjjToAAJwlBhuWO^tBuYsEdkzAJQ88KmQFXgvshIrYcqcYpU
+----
+CL:27
+CT:binary/synth+text
+
+hello world can i hellp you
+------
+[116/9/26-12:47:36 633][VBS][Px0bc7][Tx76ff2210] send_recv_http_message| enter.
+[116/9/26-12:47:36 633][VBS][Px0bc7][Tx76ff2210] connect_server| enter, transport = 0x1203b78, connect status = 1
+[116/9/26-12:47:36 633][VBS][Px0bc7][Tx76ff2210] connect_server| leave ok, connected already.
+[116/9/26-12:47:36 634][VBS][Px0bc7][Tx76ff2210] send_message| enter.
+[116/9/26-12:47:36 634][VBS][Px0bc7][Tx76ff2210] send_message| leave ok.
+[116/9/26-12:47:36 634][VBS][Px0bc7][Tx76ff2210] send_message| enter.
+[116/9/26-12:47:36 634][VBS][Px0bc7][Tx76ff2210] send_message| leave ok.
+[116/9/26-12:47:36 634][VBS][Px0bc7][Tx76ff2210] send_http_message| http request message has been sent out successfully
+[116/9/26-12:47:36 634][VBS][Px0bc7][Tx76ff2210] recv_message| enter, offset = 0.
+[116/9/26-12:47:36 835][WAN][Px0bc7][Tx76ff2210] recv_message| leave, receive message from server timeout!
+[116/9/26-12:47:36 836][VBS][Px0bc7][Tx76ff2210] recv_message| enter, offset = 0.
+[116/9/26-12:47:36 968][VBS][Px0bc7][Tx76ff2210] recv_message| leave ok, msg len = 252.
+[116/9/26-12:47:36 968][VBS][Px0bc7][Tx76ff2210] send_recv_http_message| leave, http response message:
+HTTP/1.1 200 OK
+Content-Length: 113
+X-Req-Date: 2016/10/26 20:47:36 855
+CT: text/plain
+CL: 113
+X-Res-Date: 2016/10/26 20:47:36 939
+
+ver=MSSP+0%2E9&ret=0&cver=3%2E0%2E0%2E1034&key=0dxbOoiAoIdmlYzMkwBjjToAAJwlBhuWO^tBuYsEdkzAJQ88KmQFXgvshIrYcqcYpU
+[116/9/26-12:47:36 968][VBS][Px0bc7][Tx76ff2210] build_http_message| leave ok, http request message:
+POST /index.htm HTTP/1.1
+CT:text/plain
+Content-Length:123
+
+ver=MSSP+0%2E9&sub=tts&cmd=fch&cver=3%2E0%2E0%2E1034&key=0dxbOoiAoIdmlYzMkwBjjToAAJwlBhuWO^tBuYsEdkzAKs2DurAZqtc8hIrYcqcYpU
+[116/9/26-12:47:36 969][VBS][Px0bc7][Tx76ff2210] send_recv_http_message| enter.
+[116/9/26-12:47:36 969][VBS][Px0bc7][Tx76ff2210] connect_server| enter, transport = 0x1203b78, connect status = 1
+[116/9/26-12:47:36 969][VBS][Px0bc7][Tx76ff2210] connect_server| leave ok, connected already.
+[116/9/26-12:47:36 969][VBS][Px0bc7][Tx76ff2210] send_message| enter.
+[116/9/26-12:47:36 969][VBS][Px0bc7][Tx76ff2210] send_message| leave ok.
+[116/9/26-12:47:36 969][VBS][Px0bc7][Tx76ff2210] send_message| enter.
+[116/9/26-12:47:36 969][VBS][Px0bc7][Tx76ff2210] send_message| leave ok.
+[116/9/26-12:47:36 969][VBS][Px0bc7][Tx76ff2210] send_http_message| http request message has been sent out successfully
+[116/9/26-12:47:36 969][VBS][Px0bc7][Tx76ff2210] recv_message| enter, offset = 0.
+[116/9/26-12:47:37 142][VBS][Px0bc7][Tx76ff2210] recv_message| leave ok, msg len = 3509.
+[116/9/26-12:47:37 142][VBS][Px0bc7][Tx76ff2210] send_recv_http_message| leave, http response message:
+HTTP/1.1 200 OK
+Content-Length: 3371
+X-Req-Date: 2016/10/26 20:47:36 962
+CT: mp;b=--
+CL: 3371
+X-Res-Date: 2016/10/26 20:47:37 111
+
+----
+CL:126
+
+ver=MSSP+0%2E9&ret=0&cver=3%2E0%2E0%2E1034&ced=27&ofg=1&key=0dxbOoiAoIdmlYzMkwBjjToAAJwlBhuWO^tBuYsEdkzAKs2DurAZqtc8hIrYcqcYpU
+----
+CL:3172
+CT:binary/audio
+CE:speex-wb
+
+<3‰!º`
+[116/9/26-12:47:37 162][VBS][Px0bc7][Tx76ff2210] synth_audio_get| total 33280 bytes synthetic audio data got.
+[116/9/26-12:47:37 162][INF][Px0bc7][Tx76ff2210] synth_audio_get| got first audio block.
+[116/9/26-12:47:37 162][VBS][Px0bc7][Tx76ff2210] QTTSGetParam| enter, sessionID=msc-resource0001@synthesizer, paramName=upflow, valueLen=32
+[116/9/26-12:47:37 162][VBS][Px0bc7][Tx76ff2210] QTTSGetParam| leave, ret=0, value=712, len = 3
+[116/9/26-12:47:37 162][VBS][Px0bc7][Tx76ff2210] QTTSGetParam| enter, sessionID=msc-resource0001@synthesizer, paramName=downflow, valueLen=32
+[116/9/26-12:47:37 162][VBS][Px0bc7][Tx76ff2210] QTTSGetParam| leave, ret=0, value=4013, len = 4
+[116/9/26-12:47:37 163][VBS][Px0bc7][Tx76ff2210] build_http_message| leave ok, http request message:
+POST /index.htm HTTP/1.1
+CT:text/plain
+Content-Length:123
+
+ver=MSSP+0%2E9&sub=tts&cmd=fch&cver=3%2E0%2E0%2E1034&key=0dxbOoiAoIdmlYzMkwBjjToAAJwlBhuWO^tBuYsEdkzALGKfgFPMOlichIrYcqcYpU
+[116/9/26-12:47:37 163][VBS][Px0bc7][Tx76ff2210] send_recv_http_message| enter.
+[116/9/26-12:47:37 163][VBS][Px0bc7][Tx76ff2210] connect_server| enter, transport = 0x1203b78, connect status = 1
+[116/9/26-12:47:37 163][VBS][Px0bc7][Tx76ff2210] connect_server| leave ok, connected already.
+[116/9/26-12:47:37 163][VBS][Px0bc7][Tx76ff2210] send_message| enter.
+[116/9/26-12:47:37 163][VBS][Px0bc7][Tx76ff2210] send_message| leave ok.
+[116/9/26-12:47:37 163][VBS][Px0bc7][Tx76ff2210] send_message| enter.
+[116/9/26-12:47:37 163][VBS][Px0bc7][Tx76ff2210] send_message| leave ok.
+[116/9/26-12:47:37 163][VBS][Px0bc7][Tx76ff2210] send_http_message| http request message has been sent out successfully
+[116/9/26-12:47:37 163][VBS][Px0bc7][Tx76ff2210] recv_message| enter, offset = 0.
+[116/9/26-12:47:37 256][VBS][Px0bc7][Tx76ff2210] recv_message| leave ok, msg len = 2655.
+[116/9/26-12:47:37 256][VBS][Px0bc7][Tx76ff2210] send_recv_http_message| leave, http response message:
+HTTP/1.1 200 OK
+Content-Length: 2517
+X-Req-Date: 2016/10/26 20:47:37 174
+CT: mp;b=--
+CL: 2517
+X-Res-Date: 2016/10/26 20:47:37 225
+
+----
+CL:126
+
+ver=MSSP+0%2E9&ret=0&cver=3%2E0%2E0%2E1034&ced=27&ofg=2&key=0dxbOoiAoIdmlYzMkwBjjToAAJwlBhuWO^tBuYsEdkzALGKfgFPMOlichIrYcqcYpU
+----
+CL:2318
+CT:binary/audio
+CE:speex-wb
+
+<2Y¬êU;gÜèÈ:šçŒœ¿‘’}›<Úbhß¿Î&íËR/
+›¡ÝÁyäÇäZøóí”Glôïh³öW<3P¼/õ/Þ«uèÈ‹‰u	Ÿ¾1ì	Íòýê*- SlFUf	-°$m•ÑqZÉ9Z:Ävp Ž;B v€„<3ÁÑVˆÞúSÝÄÍGÝ*B÷
+âÓÁúºLEÖöNòrß!•¢ðí
+»1{ò°JAÂÇ‘b××<3÷=ÖÂwlwÌ’ÖM„Dõ§®6f‘›ãÑwÇèæ„¼±½lÿcYQ£º:À»C Þ÷óà…×<3îÓ–µW‚WŠëóD°»€½OÔ
+[116/9/26-12:47:37 270][VBS][Px0bc7][Tx76ff2210] synth_audio_get| total 24320 bytes synthetic audio data got.
+[116/9/26-12:47:37 270][INF][Px0bc7][Tx76ff2210] synth_audio_get| got last audio block.
+[116/9/26-12:47:37 270][VBS][Px0bc7][Tx76ff2210] QTTSGetParam| enter, sessionID=msc-resource0001@synthesizer, paramName=upflow, valueLen=32
+[116/9/26-12:47:37 270][VBS][Px0bc7][Tx76ff2210] QTTSGetParam| leave, ret=0, value=898, len = 3
+[116/9/26-12:47:37 270][VBS][Px0bc7][Tx76ff2210] QTTSGetParam| enter, sessionID=msc-resource0001@synthesizer, paramName=downflow, valueLen=32
+[116/9/26-12:47:37 270][VBS][Px0bc7][Tx76ff2210] QTTSGetParam| leave, ret=0, value=6668, len = 4
+[116/9/26-12:47:37 271][VBS][Px0bc7][Tx76ff2210] build_http_message| leave ok, http request message:
+POST /index.htm HTTP/1.1
+CT:text/plain
+Content-Length:123
+
+ver=MSSP+0%2E9&sub=tts&cmd=sse&cver=3%2E0%2E0%2E1034&key=0dxbOoiAoIdmlYzMkwBjjToAAJwlBhuWO^tBuYsEdkzAKUH13sAIadhchIrYcqcYpU
+[116/9/26-12:47:37 271][VBS][Px0bc7][Tx76ff2210] connect_server| enter, transport = 0x1203b78, connect status = 1
+[116/9/26-12:47:37 271][VBS][Px0bc7][Tx76ff2210] connect_server| leave ok, connected already.
+[116/9/26-12:47:37 271][VBS][Px0bc7][Tx76ff2210] send_message| enter.
+[116/9/26-12:47:37 271][VBS][Px0bc7][Tx76ff2210] send_message| leave ok.
+[116/9/26-12:47:37 272][VBS][Px0bc7][Tx76ff2210] send_message| enter.
+[116/9/26-12:47:37 272][VBS][Px0bc7][Tx76ff2210] send_message| leave ok.
+[116/9/26-12:47:37 272][VBS][Px0bc7][Tx76ff2210] send_http_message| http request message has been sent out successfully
+[116/9/26-12:47:37 272][VBS][Px0bc7][Tx76ff2210] disconnect_server| enter.
+[116/9/26-12:47:37 272][VBS][Px0bc7][Tx76ff2210] disconnect_server| leave ok.
+[116/9/26-12:47:37 272][INF][Px0bc7][Tx76ff2210] synth_session_end| size of data uploaded by user: 1084(bytes), downloaded by user: 6668(bytes), effective data uploaded by user: 93(bytes), effective data downloaded by user: 5490(bytes).
+[116/9/26-12:47:37 272][VBS][Px0bc7][Tx76ff2210] disconnect_server| enter.
+[116/9/26-12:47:37 272][VBS][Px0bc7][Tx76ff2210] disconnect_server| leave ok.
+[116/9/26-12:47:37 272][VBS][Px0bc7][Tx76ff2210] QTTSSessionEnd| reason: Normal.
+[116/9/26-12:47:37 272][INF][Px0bc7][Tx76ff2210] fini_sess_info| open session error log file ./0b0cfc07fca81c956ab9181d8576f4a8/msc_sess_err.log failed, err = 13
+[116/9/26-12:47:37 272][INF][Px0bc7][Tx76ff2210] fini_sess_info| open session performance log file ./0b0cfc07fca81c956ab9181d8576f4a8/msc_sess_perf.log failed, err = 13
+=============================================================
+	Mobile Speech Client End-Time: 116/9/26-12:47:37 272
+=============================================================
