@@ -11,12 +11,12 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->lcdNumber->setMode(QLCDNumber::Dec);
     QTime time = QTime::currentTime();
     ui->lcdNumber->display(time.toString("hh:mm:ss"));
-    showFullScreen();
+    //showFullScreen();
     timer = new QTimer(this);
     connect(timer,SIGNAL(timeout()),this,SLOT(timerUpDate()));
     timer->start(1000);
-    ui->statusBar->showMessage("hello this my frist application for raspberry");
-
+    ui->comboBox->addItem("COM1");
+    ui->comboBox->addItem("COM2");
 }
 
 MainWindow::~MainWindow()
@@ -30,7 +30,7 @@ void MainWindow::timerUpDate()
 }
 void MainWindow::on_pushButton_clicked()
 {
-    ui->textBrowser->append("nihao/n");
+    ui->textBrowser->setText("");
 }
 
 void MainWindow::on_pushButton_3_clicked()
@@ -38,7 +38,9 @@ void MainWindow::on_pushButton_3_clicked()
     this->close();
 }
 
-void MainWindow::on_pushButton_2_clicked()
-{
 
+void MainWindow::on_pushButton_4_clicked()
+{
+    ui->textBrowser->append(ui->textEdit_2->toPlainText());
+    ui->textEdit_2->setText("");
 }

@@ -13,14 +13,13 @@
 #include <QtGui/QAction>
 #include <QtGui/QApplication>
 #include <QtGui/QButtonGroup>
+#include <QtGui/QComboBox>
 #include <QtGui/QHeaderView>
 #include <QtGui/QLCDNumber>
 #include <QtGui/QMainWindow>
-#include <QtGui/QMenu>
-#include <QtGui/QMenuBar>
 #include <QtGui/QPushButton>
-#include <QtGui/QStatusBar>
 #include <QtGui/QTextBrowser>
+#include <QtGui/QTextEdit>
 #include <QtGui/QToolBar>
 #include <QtGui/QWidget>
 
@@ -31,60 +30,49 @@ class Ui_MainWindow
 public:
     QWidget *centralWidget;
     QLCDNumber *lcdNumber;
+    QPushButton *pushButton_4;
+    QTextEdit *textEdit_2;
     QPushButton *pushButton;
-    QPushButton *pushButton_2;
     QPushButton *pushButton_3;
     QTextBrowser *textBrowser;
-    QMenuBar *menuBar;
-    QMenu *menuHello;
-    QMenu *menuHelp;
+    QComboBox *comboBox;
     QToolBar *mainToolBar;
-    QStatusBar *statusBar;
 
     void setupUi(QMainWindow *MainWindow)
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QString::fromUtf8("MainWindow"));
         MainWindow->setWindowModality(Qt::NonModal);
-        MainWindow->resize(515, 323);
+        MainWindow->resize(555, 348);
         centralWidget = new QWidget(MainWindow);
         centralWidget->setObjectName(QString::fromUtf8("centralWidget"));
         lcdNumber = new QLCDNumber(centralWidget);
         lcdNumber->setObjectName(QString::fromUtf8("lcdNumber"));
-        lcdNumber->setGeometry(QRect(0, 10, 171, 41));
+        lcdNumber->setGeometry(QRect(190, 250, 131, 31));
         lcdNumber->setLayoutDirection(Qt::RightToLeft);
         lcdNumber->setAutoFillBackground(true);
+        pushButton_4 = new QPushButton(centralWidget);
+        pushButton_4->setObjectName(QString::fromUtf8("pushButton_4"));
+        pushButton_4->setGeometry(QRect(460, 290, 81, 31));
+        textEdit_2 = new QTextEdit(centralWidget);
+        textEdit_2->setObjectName(QString::fromUtf8("textEdit_2"));
+        textEdit_2->setGeometry(QRect(10, 290, 441, 31));
         pushButton = new QPushButton(centralWidget);
         pushButton->setObjectName(QString::fromUtf8("pushButton"));
-        pushButton->setGeometry(QRect(350, 210, 101, 31));
-        pushButton_2 = new QPushButton(centralWidget);
-        pushButton_2->setObjectName(QString::fromUtf8("pushButton_2"));
-        pushButton_2->setGeometry(QRect(350, 150, 101, 31));
+        pushButton->setGeometry(QRect(100, 250, 81, 31));
         pushButton_3 = new QPushButton(centralWidget);
         pushButton_3->setObjectName(QString::fromUtf8("pushButton_3"));
-        pushButton_3->setGeometry(QRect(410, 0, 101, 31));
+        pushButton_3->setGeometry(QRect(460, 250, 81, 31));
         textBrowser = new QTextBrowser(centralWidget);
         textBrowser->setObjectName(QString::fromUtf8("textBrowser"));
-        textBrowser->setGeometry(QRect(10, 70, 281, 171));
+        textBrowser->setGeometry(QRect(10, 0, 531, 241));
+        comboBox = new QComboBox(centralWidget);
+        comboBox->setObjectName(QString::fromUtf8("comboBox"));
+        comboBox->setGeometry(QRect(10, 250, 85, 31));
         MainWindow->setCentralWidget(centralWidget);
-        menuBar = new QMenuBar(MainWindow);
-        menuBar->setObjectName(QString::fromUtf8("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 515, 27));
-        menuHello = new QMenu(menuBar);
-        menuHello->setObjectName(QString::fromUtf8("menuHello"));
-        menuHelp = new QMenu(menuBar);
-        menuHelp->setObjectName(QString::fromUtf8("menuHelp"));
-        MainWindow->setMenuBar(menuBar);
         mainToolBar = new QToolBar(MainWindow);
         mainToolBar->setObjectName(QString::fromUtf8("mainToolBar"));
         MainWindow->addToolBar(Qt::TopToolBarArea, mainToolBar);
-        statusBar = new QStatusBar(MainWindow);
-        statusBar->setObjectName(QString::fromUtf8("statusBar"));
-        MainWindow->setStatusBar(statusBar);
-
-        menuBar->addAction(menuHello->menuAction());
-        menuBar->addAction(menuHelp->menuAction());
-        menuHello->addSeparator();
 
         retranslateUi(MainWindow);
 
@@ -93,12 +81,10 @@ public:
 
     void retranslateUi(QMainWindow *MainWindow)
     {
-        MainWindow->setWindowTitle(QApplication::translate("MainWindow", "MainWindow", 0, QApplication::UnicodeUTF8));
+        MainWindow->setWindowTitle(QApplication::translate("MainWindow", "Serial", 0, QApplication::UnicodeUTF8));
+        pushButton_4->setText(QApplication::translate("MainWindow", "Send", 0, QApplication::UnicodeUTF8));
         pushButton->setText(QApplication::translate("MainWindow", "START", 0, QApplication::UnicodeUTF8));
-        pushButton_2->setText(QApplication::translate("MainWindow", "STOP", 0, QApplication::UnicodeUTF8));
         pushButton_3->setText(QApplication::translate("MainWindow", "Close", 0, QApplication::UnicodeUTF8));
-        menuHello->setTitle(QApplication::translate("MainWindow", "Hello", 0, QApplication::UnicodeUTF8));
-        menuHelp->setTitle(QApplication::translate("MainWindow", "Help", 0, QApplication::UnicodeUTF8));
     } // retranslateUi
 
 };
