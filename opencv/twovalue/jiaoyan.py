@@ -21,3 +21,5 @@ if __name__ == '__main__':
 	b=cv2.split(simg)[2]
 	merged = cv2.merge([b,g,r])
 	cv2.imwrite("img1.jpg",merged)
+	ret,thresh1=cv2.threshold(simg,127,255,cv2.THRESH_BINARY)
+	cv2.imwrite("thresh1.jpg",thresh1) 
