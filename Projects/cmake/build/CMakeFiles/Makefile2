@@ -60,39 +60,39 @@ CMAKE_SOURCE_DIR = /home/tom/Linux_Cpp/Projects/cmake
 CMAKE_BINARY_DIR = /home/tom/Linux_Cpp/Projects/cmake/build
 
 #=============================================================================
-# Target rules for target CMakeFiles/src.dir
+# Target rules for target CMakeFiles/matata.dir
 
 # All Build rule for target.
-CMakeFiles/src.dir/all:
-	$(MAKE) -f CMakeFiles/src.dir/build.make CMakeFiles/src.dir/depend
-	$(MAKE) -f CMakeFiles/src.dir/build.make CMakeFiles/src.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tom/Linux_Cpp/Projects/cmake/build/CMakeFiles --progress-num=1,2 "Built target src"
-.PHONY : CMakeFiles/src.dir/all
+CMakeFiles/matata.dir/all:
+	$(MAKE) -f CMakeFiles/matata.dir/build.make CMakeFiles/matata.dir/depend
+	$(MAKE) -f CMakeFiles/matata.dir/build.make CMakeFiles/matata.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tom/Linux_Cpp/Projects/cmake/build/CMakeFiles --progress-num=1,2 "Built target matata"
+.PHONY : CMakeFiles/matata.dir/all
 
 # Include target in all.
-all: CMakeFiles/src.dir/all
+all: CMakeFiles/matata.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/src.dir/rule: cmake_check_build_system
+CMakeFiles/matata.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/tom/Linux_Cpp/Projects/cmake/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/src.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/matata.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/tom/Linux_Cpp/Projects/cmake/build/CMakeFiles 0
-.PHONY : CMakeFiles/src.dir/rule
+.PHONY : CMakeFiles/matata.dir/rule
 
 # Convenience name for target.
-src: CMakeFiles/src.dir/rule
+matata: CMakeFiles/matata.dir/rule
 
-.PHONY : src
-
-# clean rule for target.
-CMakeFiles/src.dir/clean:
-	$(MAKE) -f CMakeFiles/src.dir/build.make CMakeFiles/src.dir/clean
-.PHONY : CMakeFiles/src.dir/clean
+.PHONY : matata
 
 # clean rule for target.
-clean: CMakeFiles/src.dir/clean
+CMakeFiles/matata.dir/clean:
+	$(MAKE) -f CMakeFiles/matata.dir/build.make CMakeFiles/matata.dir/clean
+.PHONY : CMakeFiles/matata.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/matata.dir/clean
 
 .PHONY : clean
 

@@ -11,6 +11,10 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.5.1/CMakeCCompiler.cmake"
   "CMakeFiles/3.5.1/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.5.1/CMakeSystem.cmake"
+  "/usr/local/opencv2.4.13/share/OpenCV/OpenCVConfig-version.cmake"
+  "/usr/local/opencv2.4.13/share/OpenCV/OpenCVConfig.cmake"
+  "/usr/local/opencv2.4.13/share/OpenCV/OpenCVModules-release.cmake"
+  "/usr/local/opencv2.4.13/share/OpenCV/OpenCVModules.cmake"
   "/usr/share/cmake-3.5/Modules/CMakeCInformation.cmake"
   "/usr/share/cmake-3.5/Modules/CMakeCXXInformation.cmake"
   "/usr/share/cmake-3.5/Modules/CMakeCommonLanguageInclude.cmake"
@@ -41,5 +45,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/src.dir/DependInfo.cmake"
+  "CMakeFiles/matata.dir/DependInfo.cmake"
   )

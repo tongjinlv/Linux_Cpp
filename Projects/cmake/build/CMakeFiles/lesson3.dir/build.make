@@ -57,38 +57,38 @@ include CMakeFiles/lesson3.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/lesson3.dir/flags.make
 
-CMakeFiles/lesson3.dir/main.o: CMakeFiles/lesson3.dir/flags.make
-CMakeFiles/lesson3.dir/main.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tom/Linux_Cpp/Projects/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/lesson3.dir/main.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lesson3.dir/main.o -c /home/tom/Linux_Cpp/Projects/cmake/main.cpp
+CMakeFiles/lesson3.dir/main.cpp.o: CMakeFiles/lesson3.dir/flags.make
+CMakeFiles/lesson3.dir/main.cpp.o: ../main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tom/Linux_Cpp/Projects/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/lesson3.dir/main.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lesson3.dir/main.cpp.o -c /home/tom/Linux_Cpp/Projects/cmake/main.cpp
 
-CMakeFiles/lesson3.dir/main.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lesson3.dir/main.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tom/Linux_Cpp/Projects/cmake/main.cpp > CMakeFiles/lesson3.dir/main.i
+CMakeFiles/lesson3.dir/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lesson3.dir/main.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tom/Linux_Cpp/Projects/cmake/main.cpp > CMakeFiles/lesson3.dir/main.cpp.i
 
-CMakeFiles/lesson3.dir/main.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lesson3.dir/main.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tom/Linux_Cpp/Projects/cmake/main.cpp -o CMakeFiles/lesson3.dir/main.s
+CMakeFiles/lesson3.dir/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lesson3.dir/main.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tom/Linux_Cpp/Projects/cmake/main.cpp -o CMakeFiles/lesson3.dir/main.cpp.s
 
-CMakeFiles/lesson3.dir/main.o.requires:
+CMakeFiles/lesson3.dir/main.cpp.o.requires:
 
-.PHONY : CMakeFiles/lesson3.dir/main.o.requires
+.PHONY : CMakeFiles/lesson3.dir/main.cpp.o.requires
 
-CMakeFiles/lesson3.dir/main.o.provides: CMakeFiles/lesson3.dir/main.o.requires
-	$(MAKE) -f CMakeFiles/lesson3.dir/build.make CMakeFiles/lesson3.dir/main.o.provides.build
-.PHONY : CMakeFiles/lesson3.dir/main.o.provides
+CMakeFiles/lesson3.dir/main.cpp.o.provides: CMakeFiles/lesson3.dir/main.cpp.o.requires
+	$(MAKE) -f CMakeFiles/lesson3.dir/build.make CMakeFiles/lesson3.dir/main.cpp.o.provides.build
+.PHONY : CMakeFiles/lesson3.dir/main.cpp.o.provides
 
-CMakeFiles/lesson3.dir/main.o.provides.build: CMakeFiles/lesson3.dir/main.o
+CMakeFiles/lesson3.dir/main.cpp.o.provides.build: CMakeFiles/lesson3.dir/main.cpp.o
 
 
 # Object files for target lesson3
 lesson3_OBJECTS = \
-"CMakeFiles/lesson3.dir/main.o"
+"CMakeFiles/lesson3.dir/main.cpp.o"
 
 # External object files for target lesson3
 lesson3_EXTERNAL_OBJECTS =
 
-lesson3: CMakeFiles/lesson3.dir/main.o
+lesson3: CMakeFiles/lesson3.dir/main.cpp.o
 lesson3: CMakeFiles/lesson3.dir/build.make
 lesson3: /usr/local/opencv2.4.13/lib/libopencv_videostab.so.2.4.13
 lesson3: /usr/local/opencv2.4.13/lib/libopencv_ts.a
@@ -118,7 +118,7 @@ CMakeFiles/lesson3.dir/build: lesson3
 
 .PHONY : CMakeFiles/lesson3.dir/build
 
-CMakeFiles/lesson3.dir/requires: CMakeFiles/lesson3.dir/main.o.requires
+CMakeFiles/lesson3.dir/requires: CMakeFiles/lesson3.dir/main.cpp.o.requires
 
 .PHONY : CMakeFiles/lesson3.dir/requires
 

@@ -111,32 +111,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named src
+# Target rules for targets named matata
 
 # Build rule for target.
-src: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 src
-.PHONY : src
+matata: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 matata
+.PHONY : matata
 
 # fast build rule for target.
-src/fast:
-	$(MAKE) -f CMakeFiles/src.dir/build.make CMakeFiles/src.dir/build
-.PHONY : src/fast
+matata/fast:
+	$(MAKE) -f CMakeFiles/matata.dir/build.make CMakeFiles/matata.dir/build
+.PHONY : matata/fast
 
-# target to build an object file
-main.o:
-	$(MAKE) -f CMakeFiles/src.dir/build.make CMakeFiles/src.dir/main.o
+main.o: main.cpp.o
+
 .PHONY : main.o
 
-# target to preprocess a source file
-main.i:
-	$(MAKE) -f CMakeFiles/src.dir/build.make CMakeFiles/src.dir/main.i
+# target to build an object file
+main.cpp.o:
+	$(MAKE) -f CMakeFiles/matata.dir/build.make CMakeFiles/matata.dir/main.cpp.o
+.PHONY : main.cpp.o
+
+main.i: main.cpp.i
+
 .PHONY : main.i
 
-# target to generate assembly for a file
-main.s:
-	$(MAKE) -f CMakeFiles/src.dir/build.make CMakeFiles/src.dir/main.s
+# target to preprocess a source file
+main.cpp.i:
+	$(MAKE) -f CMakeFiles/matata.dir/build.make CMakeFiles/matata.dir/main.cpp.i
+.PHONY : main.cpp.i
+
+main.s: main.cpp.s
+
 .PHONY : main.s
+
+# target to generate assembly for a file
+main.cpp.s:
+	$(MAKE) -f CMakeFiles/matata.dir/build.make CMakeFiles/matata.dir/main.cpp.s
+.PHONY : main.cpp.s
 
 # Help Target
 help:
@@ -146,7 +158,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... src"
+	@echo "... matata"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
