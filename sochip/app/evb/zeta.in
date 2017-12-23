@@ -1,0 +1,87 @@
+TARGET_PATH :=$(call my-dir)
+
+include $(ENV_CLEAR)
+
+TARGET_LDFLAGS += -lminigui_ths \
+	-lutils \
+	-lrt \
+	-lpthread \
+	-law_net \
+	-lwifi_ap	
+
+TARGET_CPPFLAGS += -g
+	
+#strict compile option
+#TARGET_CFLAGS += -Werror  -Wall -Wno-unused-parameter -Wno-reorder
+compile_date=$(shell date "+%Y-%m-%d %H:%M:%S")
+#compile_version=$(addprefix $(addsuffix $(compile_date), "), ")
+TARGET_CFLAGS += -DCOMPILE_VERSION="\"$(USER)@$(TARGET_PRODUCT) $(compile_date)\""
+
+TARGET_SRC :=  	src/widget/CdrIcon.cpp \
+	src/widget/RegisterWidgets.cpp \
+	src/widget/SubMenu.cpp \
+	src/widget/showMessageBox.cpp \
+	src/widget/PopUpMenu.cpp \
+	src/widget/CdrLabel.cpp \
+	src/widget/dateSetting.cpp \
+	src/widget/wifi_info.cpp \
+	src/widget/coolIndicator.cpp \
+	src/widget/MenuList.cpp \
+	src/widget/licensePlateWM.cpp \
+	src/widget/CdrProgressBar.cpp \
+	src/widget/TipLabel.cpp \
+	src/widget/CdrToolTip.cpp \
+	src/storage/uevent.cpp \
+	src/storage/Process.cpp \
+	src/storage/StorageManager.cpp \
+	src/window/StatusBar.cpp \
+	src/window/MainWindow.cpp \
+	src/window/RecordPreview.cpp \
+	src/window/PlayBack.cpp \
+	src/window/PlayBackPreview.cpp \
+	src/window/RegisterCDRWindow.cpp \
+	src/window/Menu.cpp \
+	src/window/MainPreview.cpp \
+	src/window/OtherPreview.cpp \
+	src/window/ModePreview.cpp \
+	src/event/ConfigData.cpp \
+	src/event/EventManager.cpp \
+	src/power/PowerManager.cpp \
+	src/server/CdrServer.cpp \
+	src/misc/CdrTimer.cpp \
+	src/misc/Dialog.cpp \
+	src/misc/ResourceManager.cpp \
+	src/misc/posixTimer.cpp \
+	src/misc/cdrLang.cpp \
+	src/misc/wifi_tip.cpp \
+	src/misc/Message2Str.cpp \
+	src/misc/Rtc.cpp \
+	src/misc/cdr_misc.cpp 
+
+TARGET_INC := ./include/minigui\
+	$(TARGET_PATH)/include/event \
+	$(TARGET_PATH)/include/misc \
+	$(TARGET_PATH)/include/server \
+	$(TARGET_PATH)/include/power \
+	$(TARGET_PATH)/include/storage \
+	$(TARGET_PATH)/include/widget \
+	$(TARGET_PATH)/include/window \
+	$(TARGET_TOP)/core/include \
+	$(TARGET_TOP)/core/include/cedar \
+	$(TARGET_TOP)/core/include/cutils \
+	$(TARGET_TOP)/core/include/hardware \
+	$(TARGET_TOP)/core/include/system \
+	$(TARGET_TOP)/core/include/media \
+	$(TARGET_TOP)/core/include/interface \
+	$(TARGET_TOP)/core/display \
+	$(TARGET_TOP)/core/include/media/openmax \
+	$(TARGET_TOP)/core/camera \
+	$(TARGET_TOP)/core/include/recorder\
+	$(TARGET_TOP)/core/include/mediaplayer\
+
+TARGET_SHARED_LIB += libcutils libinterface librecorder libmp4v2 libglog libmediaplayer	
+	
+TARGET_MODULE := evb
+
+include $(BUILD_BIN)
+
