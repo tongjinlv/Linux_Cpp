@@ -1,0 +1,1 @@
+cmd_/home/tom/work/tftp/sochip/module/gpio/mt_gpio.ko := arm-linux-gnueabi-ld -EL -r  -T /home/tom/work/sochip/linux-3.4/scripts/module-common.lds --build-id  -o /home/tom/work/tftp/sochip/module/gpio/mt_gpio.ko /home/tom/work/tftp/sochip/module/gpio/mt_gpio.o /home/tom/work/tftp/sochip/module/gpio/mt_gpio.mod.o

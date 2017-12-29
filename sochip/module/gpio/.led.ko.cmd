@@ -1,0 +1,1 @@
+cmd_/home/tom/work/tftp/sochip/module/gpio/led.ko := arm-linux-gnueabi-ld -EL -r  -T /home/tom/work/sochip/linux-3.4/scripts/module-common.lds --build-id  -o /home/tom/work/tftp/sochip/module/gpio/led.ko /home/tom/work/tftp/sochip/module/gpio/led.o /home/tom/work/tftp/sochip/module/gpio/led.mod.o
