@@ -13,7 +13,8 @@ private:
  
 public:
         tcp_client(char* server_ip,char* server_port);
-        int tcp_write(char *text);
+        int tcp_write(char *id,char *text);
         void tcp_close(void);
+        int get_ip_by_domain(const char *domain, char *ip);
 };
 
