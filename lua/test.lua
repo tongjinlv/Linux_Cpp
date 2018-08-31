@@ -1,4 +1,5 @@
-local f=assert(io.open("test.txt",'a'))  --a是末尾追加模式
+io.write("zzz\r\n")
+local f=assert(io.open("log.txt","a"))
 f:write("Welcome\n这里增加一个换行\n")
 f:write("Welocome\n测试内容")
 f:write("\nceshineit")
