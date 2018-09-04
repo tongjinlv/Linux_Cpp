@@ -73,7 +73,8 @@ int tcp_client::tcp_write(char *id,char *text)
 {
     char buf[1000];
     sprintf(buf,"POST /php/api.php?id=%s HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nHost: trtos.com\nContent-Length: %ld\nExpect: 100-continue\nConnection: Keep-Alive\n\n\n%s",id,strlen(text),text);
-    if( send( socket_fd,buf,strlen(buf),0 ) < 0 ) {
+    printf(buf);
+     if( send( socket_fd,buf,strlen(buf),0 ) < 0 ) {
             printf("send message error\n");
             exit(0);
     }

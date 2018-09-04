@@ -15,8 +15,8 @@ def get_gpu_temp():
     return  float(gpu_temp)
 ss=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
 ss.connect(('112.74.98.39',1500))
-#ss.sendall('H718L9X19767N1G2')
-ss.sendall('2G0016EX181Z0S4O')
+ss.sendall('H718L9X19767N1G2')
+#ss.sendall('2G0016EX181Z0S4O')
 data=ss.recv(1024)
 print "revice %s"%data
 while(True):

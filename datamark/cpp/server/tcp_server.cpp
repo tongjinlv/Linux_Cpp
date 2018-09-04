@@ -43,7 +43,7 @@ int tcp_server::recv_msg()
                                 throw("Read() error!");
                         } else {
                                 printf("Received message: %s\n",buffer);
-                                write(accept_fd,buffer,strlen(buffer));
+                                write(accept_fd,"0101010101",6);
                                 break;
                         }
                        	return 0;
