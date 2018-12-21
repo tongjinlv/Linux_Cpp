@@ -18,7 +18,7 @@
      int sockfd,new_fd;
      struct sockaddr_in my_addr; /* 本机地址信息 */ 
      struct sockaddr_in their_addr; /* 客户地址信息 */ 
-     unsigned int sin_size,lisnum,myport=8080; 
+     unsigned int sin_size,lisnum,myport=18080; 
      if ((sockfd = socket(PF_INET, SOCK_STREAM, 0)) == -1) { 
          perror("Create socket fail!"); 
          exit(1); 
