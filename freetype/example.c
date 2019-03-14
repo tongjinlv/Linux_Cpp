@@ -50,7 +50,6 @@ int main( int argc,char**  argv )
   FT_Matrix     matrix;                 /* transformation matrix */
   FT_Vector     pen;                    /* untransformed origin  */
   FT_Error      error;
- 
   char*         filename;
   char*         text;
   double        angle;
@@ -74,10 +73,8 @@ int main( int argc,char**  argv )
   matrix.xy = (FT_Fixed)(-sin( angle ) * 0x10000L );
   matrix.yx = (FT_Fixed)( sin( angle ) * 0x10000L );
   matrix.yy = (FT_Fixed)( cos( angle ) * 0x10000L );
-
   pen.x = 0;
   pen.y =20;
- 
   for ( n = 0; n < num_chars; n++ )
   {
     FT_Set_Transform( face, &matrix, &pen );
@@ -90,7 +87,7 @@ int main( int argc,char**  argv )
   }
  
   show_image();
-  FT_Done_Face    ( face );
+  FT_Done_Face( face );
   FT_Done_FreeType( library );
   return 0;
 }
