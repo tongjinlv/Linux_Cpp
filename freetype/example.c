@@ -3,10 +3,11 @@
 #include <string.h>
 #include <math.h>
 #include <ft2build.h>
+#include <stdlib.h>
 #include FT_FREETYPE_H
 #define WIDTH   120
-#define HEIGHT   30
-#define SIZE    HEIGHT*90/100
+#define HEIGHT   20
+#define SIZE    HEIGHT*100/100
  
 unsigned char image[HEIGHT][WIDTH];
 
@@ -33,7 +34,7 @@ void show_image( void )
   for ( i = 0; i < HEIGHT; i++ )
   {
 	if(i==0)for ( j = 0; j < WIDTH; j++ )putchar( '_' );
-    for ( j = 0; j < WIDTH; j++ )putchar( image[i][j] == 0 ? ' ': image[i][j] < 128 ? '0'+image[i][j]/13: '*' );
+    for ( j = 0; j < WIDTH; j++ )putchar( image[i][j] == 0 ? ' ': image[i][j] < 128 ? '.': '*' );
     putchar( '|' );
 	putchar( '\n' );
 	putchar( '|' );
@@ -75,13 +76,15 @@ int main( int argc,char**  argv )
   matrix.yy = (FT_Fixed)( cos( angle ) * 0x10000L );
   pen.x = 0;
   pen.y =20;
+  
+  
   for ( n = 0; n < num_chars; n++ )
   {
     FT_Set_Transform( face, &matrix, &pen );
-	wchar_t *chinese_char = L"PYLY1.0";
+	wchar_t *chinese_char = L"AD11:12";
     error = FT_Load_Char( face, chinese_char[n], FT_LOAD_RENDER );
     if (error) continue;            
-    draw_bitmap(&slot->bitmap,slot->bitmap_left,target_height-6-slot->bitmap_top );
+    draw_bitmap(&slot->bitmap,slot->bitmap_left,target_height-target_height*10/100-slot->bitmap_top );
     pen.x += slot->advance.x;
     pen.y += slot->advance.y;
   }
