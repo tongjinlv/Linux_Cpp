@@ -78,7 +78,7 @@ int main( int argc,char**  argv )
   for ( n = 0; n < num_chars; n++ )
   {
     FT_Set_Transform( face, &matrix, &pen );
-	wchar_t *chinese_char = L"爱陈玉兰";
+	wchar_t *chinese_char = L"PYLY1.0";
     error = FT_Load_Char( face, chinese_char[n], FT_LOAD_RENDER );
     if (error) continue;            
     draw_bitmap(&slot->bitmap,slot->bitmap_left,target_height-6-slot->bitmap_top );
