@@ -6,7 +6,7 @@
 #include <stdlib.h>
 #include FT_FREETYPE_H
 #define WIDTH   120
-#define HEIGHT   20
+#define HEIGHT   30
 #define SIZE    HEIGHT*100/100
  
 unsigned char image[HEIGHT][WIDTH];
@@ -76,19 +76,18 @@ int main( int argc,char**  argv )
   matrix.yy = (FT_Fixed)( cos( angle ) * 0x10000L );
   pen.x = 0;
   pen.y =20;
-  
-  
-  for ( n = 0; n < num_chars; n++ )
+  wchar_t *chinese_char = L"0123456789";
+  for ( n = 0; n < text[n]!=0; n++ )
   {
     FT_Set_Transform( face, &matrix, &pen );
-	wchar_t *chinese_char = L"AD11:12";
-    error = FT_Load_Char( face, chinese_char[n], FT_LOAD_RENDER );
+	
+    error = FT_Load_Char( face,text[n], FT_LOAD_RENDER );
     if (error) continue;            
     draw_bitmap(&slot->bitmap,slot->bitmap_left,target_height-target_height*10/100-slot->bitmap_top );
     pen.x += slot->advance.x;
     pen.y += slot->advance.y;
   }
- 
+  
   show_image();
   FT_Done_Face( face );
   FT_Done_FreeType( library );
