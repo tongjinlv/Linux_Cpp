@@ -61,6 +61,20 @@ def send(context,name,id):
    elif name==GIZWITS:
        print "机智云"
       
+
+sz = (int(cap.get(cv2.CAP_PROP_FRAME_WIDTH)),
+        int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT)))
+
+fps = 30
+#fourcc = cv2.VideoWriter_fourcc('m', 'p', '4', 'v')
+#fourcc = cv2.VideoWriter_fourcc('m', 'p', 'e', 'g')
+#fourcc = cv2.VideoWriter_fourcc(*'mpeg')
+fourcc = cv2.VideoWriter_fourcc('T', 'H', 'E', 'O')
+
+ 
+vout = cv2.VideoWriter()
+vout.open('5uT5zGTG.ogv',fourcc,fps,sz,True)
+cut=0
 while(1):
     ret,frame=cap.read()
     curframe=frame.copy()
@@ -75,6 +89,7 @@ while(1):
         thresh = cv2.threshold(img_delta, 25, 255, cv2.THRESH_BINARY)[1]
         thresh = cv2.dilate(thresh, None, iterations=2)
         thresh,contours, hierarchy = cv2.findContours(thresh.copy(),cv2.RETR_LIST,cv2.CHAIN_APPROX_SIMPLE)
+        save=0
         for c in contours:
             if cv2.contourArea(c) < 3000:
                  print cv2.contourArea(c)
@@ -82,10 +97,18 @@ while(1):
             else:
                  (x,y,w,h) = cv2.boundingRect(c)
                  cv2.rectangle(curframe,(x,y),(x+w,y+h),(0,255,0),2)
-                 cv2.imwrite("5uT5zGTG.jpg",curframe)
-                 post("5uT5zGTG.jpg")
-                 shutil.move("5uT5zGTG.jpg","/home/pi/record/"+datetime.datetime.now().strftime('%Y_%m_%d_%H_%M_%S')+".jpg")
-                 send("area:"+str(cv2.contourArea(c)),DATAMARK,"5uT5zGTG")
+                 save=save+1
+                 
+        if(save>0):
+            cv2.putText(curframe, str(cut), (10, 20), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,0), 1, cv2.LINE_AA)
+            cut=cut+1
+            vout.write(curframe)
+            print "cut",cut,"save",save
+            if(cut>30):
+                break
     pre_frame = gray_img
-    time.sleep(1)
 cap.release()
+vout.release()
+post('5uT5zGTG.mp4')
+shutil.move("5uT5zGTG.mp4","/home/pi/video/"+datetime.datetime.now().strftime('%Y_%m_%d_%H_%M_%S')+".mp4")
+send("video saveing:"+str(datetime.datetime.now().strftime('%Y_%m_%d_%H_%M_%S')),DATAMARK,"5uT5zGTG")
