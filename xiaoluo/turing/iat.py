@@ -32,6 +32,7 @@ from urllib.parse import urlencode
 import time
 import ssl
 import tts
+import app
 import turing
 import os
 from wsgiref.handlers import format_date_time
@@ -110,10 +111,11 @@ def on_message(ws, message):
                     result += w["w"]
             print("sid:%s call success!,data is:%s" % (sid, json.dumps(data, ensure_ascii=False)))
             print(result)
-            res=turing.turing(result)
-            print(res["text"])
-            tts.tts(res["text"])
-            os.system("mplayer -af volume=20 demo.mp3")
+            if(app.app(result)):
+                res=turing.turing(result)
+                print(res["text"])
+                tts.tts(res["text"])
+                os.system("mplayer -af volume=20 demo.mp3")
     except Exception as e:
         print("receive msg,but parse exception:", e)
 
