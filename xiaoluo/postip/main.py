@@ -1,5 +1,5 @@
 import requests
-
+import datetime
 import socket
 def get_host_ip():
     """
@@ -18,5 +18,6 @@ hostname = socket.gethostname()
 ip = socket.gethostbyname(hostname)
 ip="0.0.0.0"
 ip=get_host_ip()
-response = requests.get('http://dm.trtos.com/web/datamark/update.php?id=5oOeooHD&index=149653&name=树莓派IP&value='+ip)
+date=datetime.datetime.now()
+response = requests.get('http://dm.trtos.com/web/datamark/update.php?id=5oOeooHD&index=149653&name=树莓派IP&value='+ip+":"+str(date))
 response.text

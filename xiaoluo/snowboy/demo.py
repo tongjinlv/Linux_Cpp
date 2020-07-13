@@ -1,9 +1,9 @@
 import snowboydecoder
 import sys
 import signal
-
+import os
 interrupted = False
-
+detector=None
 
 def signal_handler(signal, frame):
     global interrupted
@@ -20,10 +20,17 @@ if len(sys.argv) != 3:
     sys.exit(-1)
 
 def detected():
+        global detector
+        detector.terminate()
         print("Great! I have recognized your words.\n")
+        #snowboydecoder.play_audio_file(snowboydecoder.DETECT_DING)
+        os.system("aplay /home/pi/work/Linux_Cpp/xiaoluo/snowboy/resources/ding.wav")
+        os.system("python3 /home/pi/work/Linux_Cpp/xiaoluo/turing/main.py &")
+        sys.exit(1)
 
 callbacks = [lambda: detected(),
              lambda: snowboydecoder.play_audio_file(snowboydecoder.DETECT_DONG)]
+             
 models = sys.argv[1:]
 sensitivity = [0.5]*len(models)
 # capture SIGINT signal, e.g., Ctrl+C

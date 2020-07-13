@@ -115,7 +115,7 @@ def on_message(ws, message):
                 res=turing.turing(result)
                 print(res["text"])
                 tts.tts(res["text"])
-                os.system("mplayer -af volume=20 demo.mp3")
+                os.system("mplayer -af volume=10 demo.mp3")
     except Exception as e:
         print("receive msg,but parse exception:", e)
 
