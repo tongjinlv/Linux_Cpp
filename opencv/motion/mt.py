@@ -65,15 +65,16 @@ def send(context,name,id):
 sz = (int(cap.get(cv2.CAP_PROP_FRAME_WIDTH)),
         int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT)))
 
-fps = 30
+fps = 2
 #fourcc = cv2.VideoWriter_fourcc('m', 'p', '4', 'v')
 #fourcc = cv2.VideoWriter_fourcc('m', 'p', 'e', 'g')
 #fourcc = cv2.VideoWriter_fourcc(*'mpeg')
-fourcc = cv2.VideoWriter_fourcc('T', 'H', 'E', 'O')
+#fourcc = cv2.VideoWriter_fourcc('T', 'H', 'E', 'O')
+fourcc = cv2.VideoWriter_fourcc(*'mp4v')
 
  
 vout = cv2.VideoWriter()
-vout.open('5uT5zGTG.ogv',fourcc,fps,sz,True)
+vout.open('5uT5zGTG.mp4',fourcc,fps,sz,True)
 cut=0
 while(1):
     ret,frame=cap.read()
@@ -90,22 +91,29 @@ while(1):
         thresh = cv2.dilate(thresh, None, iterations=2)
         thresh,contours, hierarchy = cv2.findContours(thresh.copy(),cv2.RETR_LIST,cv2.CHAIN_APPROX_SIMPLE)
         save=0
+        print("contours",len(contours))
+        if(len(contours)==0):
+             if(cut>0):
+                print("cut",cut)			 
+                cut=0
+                vout.release()
+                post('5uT5zGTG.mp4')
+                shutil.move("5uT5zGTG.mp4","/mnt/udisk/"+datetime.datetime.now().strftime('%Y_%m_%d_%H_%M_%S')+".mp4")
+                vout = cv2.VideoWriter()
+                vout.open('5uT5zGTG.mp4',fourcc,fps,sz,True)
         for c in contours:
             if cv2.contourArea(c) < 3000:
-                 print cv2.contourArea(c)
+                 #print cv2.contourArea(c)
                  continue
             else:
                  (x,y,w,h) = cv2.boundingRect(c)
                  cv2.rectangle(curframe,(x,y),(x+w,y+h),(0,255,0),2)
                  save=save+1
-                 
         if(save>0):
             cv2.putText(curframe, str(cut), (10, 20), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,0), 1, cv2.LINE_AA)
             cut=cut+1
             vout.write(curframe)
             print "cut",cut,"save",save
-            if(cut>30):
-                break
     pre_frame = gray_img
 cap.release()
 vout.release()
